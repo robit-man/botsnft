@@ -9,6 +9,7 @@
     export let Type = 'Transparent Mask'
     export let Rarity = '10%'
     export let MintDate = '2021-10-09'
+    export let Location = 'The etherlands'
     </script>
     
 
@@ -33,7 +34,7 @@
                     <div class="nft-author-area">
                         <p>Creator <b>{Creator}</b></p>
                         <p>Mint Date: <b>{MintDate}</b></p>
-                        <p>Type <b>{Type}</b> / Rarity: {Rarity}</p>
+                        <p>Location <b>{Location}</b></p>
                     </div>
                 </div>
            </div>
