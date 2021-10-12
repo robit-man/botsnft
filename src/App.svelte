@@ -58,7 +58,7 @@
 
     </Router>
     <div class="right-box">
-      <div class="mint-button"><p>Connect Wallet</p></div>
+      <div class="mint-button wallet-button"><p>Connect Wallet</p></div>
 
     </div>
   </header>
