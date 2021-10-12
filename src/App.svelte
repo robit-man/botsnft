@@ -2,15 +2,15 @@
     import { Router, Route, Link } from "svelte-routing";
     import Home from "./pages/Home.svelte";
     import Mint from "./pages/Mint.svelte";
-    import About from "./pages/About.svelte";
+    import Intel from "./pages/Intel.svelte";
     import Four from "./pages/Four.svelte";
-    import MyPepes from "./pages/MyPepes.svelte"
+    import Gallery from "./pages/Gallery.svelte"
     export let url = '';
     import { setContext } from 'svelte';
     import { writable } from 'svelte/store';
     import { fade } from 'svelte/transition';
     import { Audio, Video } from 'svelte-audio-video'
- 
+
   const track = {
     attach: (element, _track) => {
       // when fired, do whatever is needed to attach the track
@@ -36,26 +36,36 @@
           type="audio/mp3" />
       </Audio>
 	<header>
-        <div class="nav-row">
-          <div class="icon-box">
-          </div>
-          
+        <div class="left-box">
+          <h1 style="transform: scaleX(1.4);
+          margin-left: 20%;
+          letter-spacing: 0px;">GURA</h1>
         </div>
-      </header>
     <Router url="{url}">
-        
+      <nav>
+        <Link to="mint"><p style="font-size:2rem;margin:0rem 1rem;">Mint</p></Link>
+        <Link to="gallery"><p style="font-size:2rem;margin:0rem 1rem;">Gallery</p></Link>
+        <Link to="intel"><p style="font-size:2rem;margin:0rem 1rem;">Intel</p></Link>
+      </nav>
     
         <Route path="/"><Home /></Route>
         <Route path="/mint" component={Mint}><Mint /></Route>
         <Route path="/mint"><Mint /></Route>
-        <Route path="/about" component={About}><About /></Route>
-        <Route path="/mypepes" component={MyPepes}></Route>
+        <Route path="/intel" component={Intel}><Intel /></Route>
+        <Route path="/gallery" component={Gallery}></Route>
         <Route path="/*"><Four /></Route>
 
     </Router>
+    <div class="right-box">
 
+
+      <button on:click=><p style="font-size:2rem;margin:0rem;">CONNECT WALLET</p></button>
+
+    </div>
+  </header>
     <script type="text/javascript" src="/script.js"></script>
-    <footer style="">
+    <footer>
+
     </footer>
 </div>
 <style>
@@ -63,33 +73,34 @@
 		text-align: center;
 		padding: 0rem;
 		margin: 0 auto;
+    
 	}
-    .nav-row{
-  position: relative;
-  height:100px;top:0px;width:calc(100vw - 4rem);
+  nav{display:flex;
+    flex-flow:row;
+    justify-content:center;
+    height:auto;
+    margin:auto;}
+button{margin:1rem;}
+header{
+  z-index:5;
+  position:relative;
   display:flex;
   flex-flow:row;
   justify-content: space-between;
-  margin:auto;padding:1rem 2rem;
+  padding: 2rem;
+  height: 100px;
 }
-.wrapper{    
-  position: relative;
-  height: 100vh;
-    display: flex;
-}
-.pepebottom{
-    width:100vw;text-align:center;font-size:5rem;
-}
-button{margin:1rem;}
-header{z-index:5;position:relative;}
 @media only screen and (max-width: 900px) {
-    .pepebottom{width:100vw;text-align:center;font-size:3rem;}
 }
-footer{position:relative;display:flex;flex-flow:row;justify-content:center;bottom:0px;left:0px;width:100vw;height:auto;}
+footer{
+  position:absolute;
+  display:flex;
+  flex-flow:row;
+  justify-content:center;
+  bottom:0px;
+  left:0px;
+  width:100vw;
+  height:100px;}
 
 
-.mint{
-    transition: transform 0.2s ease;
-}
-.mint:hover{transform:scale(1.1);}
 </style>
