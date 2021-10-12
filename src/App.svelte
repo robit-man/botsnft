@@ -36,16 +36,17 @@
           type="audio/mp3" />
       </Audio>
 	<header>
-        <div class="left-box">
-          <h1 style="transform: scaleX(1.4);
-          margin-left: 20%;
-          letter-spacing: 0px;">GURA</h1>
-        </div>
     <Router url="{url}">
+      
+      <div class="left-box">
+                <Link to="/">
+        <h1 class="main-title">GURA</h1></Link>
+      </div>
+
       <nav>
-        <Link to="mint"><p style="font-size:2rem;margin:0rem 1rem;">Mint</p></Link>
-        <Link to="gallery"><p style="font-size:2rem;margin:0rem 1rem;">Gallery</p></Link>
-        <Link to="intel"><p style="font-size:2rem;margin:0rem 1rem;">Intel</p></Link>
+        <Link to="mint"><p style="font-size:1.8rem;margin:0rem 1rem;">Mint</p></Link>
+        <Link to="gallery"><p style="font-size:1.8rem;margin:0rem 1rem;">Gallery</p></Link>
+        <Link to="intel"><p style="font-size:1.8rem;margin:0rem 1rem;">Intel</p></Link>
       </nav>
     
         <Route path="/"><Home /></Route>
@@ -57,15 +58,13 @@
 
     </Router>
     <div class="right-box">
-
-
-      <button on:click=><p style="font-size:2rem;margin:0rem;">CONNECT WALLET</p></button>
+      <button on:click=><p style="display:flex;font-size:1.8rem;margin:auto;padding-left: 0.5rem;">Connect Wallet</p></button>
 
     </div>
   </header>
     <script type="text/javascript" src="/script.js"></script>
     <footer>
-
+      <div class="footer-text"><p style="display:flex;"><b><i style="margin-right:0.5rem;">GURANFT </i></b> is a <b style="margin-left:0.5rem;margin-right:0.5rem;">GURACORP</b> Company 2021 · <a href="/intel">Intel</a>· <a href="">Contact</a></p></div>
     </footer>
 </div>
 <style>
@@ -75,6 +74,12 @@
 		margin: 0 auto;
     
 	}
+  .main-title{
+    transform: scaleX(1.4);
+        letter-spacing: 0px;margin-top: 1.5rem;
+        margin-bottom: 1.5rem;}
+  .left-box{width:220px;display:flex;flex-flow:column;justify-content: center;}
+  .right-box{width:220px;display:flex;flex-flow:column;justify-content: center;}
   nav{display:flex;
     flex-flow:row;
     justify-content:center;
@@ -100,7 +105,8 @@ footer{
   bottom:0px;
   left:0px;
   width:100vw;
-  height:100px;}
+  height:50px;
+  padding-right:2rem;padding-left:2rem;}
 
 
 </style>
