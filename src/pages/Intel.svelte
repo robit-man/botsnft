@@ -3,6 +3,12 @@
     import { slide } from 'svelte/transition';
     import { Router, Link, Route } from "svelte-routing"; 
     export let droidNumber = '73'
+    export let Owner = '0x01f801ea803'
+    export let Creator = '0x897808970896'
+    export let Price = '1.3'
+    export let Type = 'Transparent Mask'
+    export let Rarity = '10%'
+    export let MintDate = '2021-10-09'
     </script>
     
 
@@ -13,11 +19,23 @@
            </div>
            <div class="text-area">
                <div class="nft-title-area">
-                <p style="font-size:2rem;margin:unset;"><b>GURAⓇ</b> Droid {droidNumber}</p>
-                <p><b>Buy Now</b> / Make Offer</p>
-                <p class="light">Share Link</p>
+                    <p style="font-size:2rem;margin:unset;"><b>GURAⓇ</b> Droid {droidNumber}</p>
+                    <p><b>Buy Now</b> / Make Offer</p>
+                    <p class="light">Share Link</p>
                </div>
+                <div class="bottom-intel-constraint">
+                    <div class="nft-owner-area">
+                        <p>Owned by <b>{Owner}</b></p>
+                        <p>Current Price <b>{Price}</b> ETH</p>
+                        <p>Type <b>{Type}</b> / Rarity: {Rarity}</p>
+                    </div>
 
+                    <div class="nft-author-area">
+                        <p>Creator <b>{Creator}</b></p>
+                        <p>Mint Date: <b>{MintDate}</b></p>
+                        <p>Type <b>{Type}</b> / Rarity: {Rarity}</p>
+                    </div>
+                </div>
            </div>
         </div>
      </div>
@@ -39,6 +57,15 @@
      }
      .nft-title-area > p{
 	margin:auto 0rem;
+     }
+     .nft-author-area > p{
+	margin:auto 0rem;
+     }
+     .nft-owner-area > p{
+	margin:auto 0rem;
+     }
+     .nft-owner-area{
+         margin-bottom:2rem;
      }
      
 @media only screen and (max-width: 900px) {

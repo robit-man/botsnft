@@ -36,6 +36,7 @@
             <p>GURA DROID</p>
             <p><b>1.0 ETH</b></p>
           </div>
+          <div class="mint-button"><p>Connect Wallet</p></div>
        </div>
     </div>
     

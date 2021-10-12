@@ -58,7 +58,7 @@
 
     </Router>
     <div class="right-box">
-      <button on:click=><p style="display:flex;font-size:1.8rem;margin:auto;padding-left: 0.5rem;padding-top: 0.25rem;">Connect Wallet</p></button>
+      <div class="mint-button"><p>Connect Wallet</p></div>
 
     </div>
   </header>

@@ -20,7 +20,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	font-smoothing: antialiased;
+	transition:all 0.2s ease;
 	margin: 0;
 	padding: 0;
 	background-color:#d8d7da;
@@ -39,6 +39,18 @@ p{
 	line-height: 1.2;
 	font-family: 'ENormal', sans-serif;
 }
+.mint-button{
+	cursor:pointer;
+  border:1px solid #656565;
+  transition:all 0.2s ease;
+}
+.mint-button > p{
+  transition:all 0.2s ease;
+}
+.mint-button:hover{
+  background-color:#656565;
+}
+.mint-button:hover > p {color:#d8d7da;}
 .light{color:#a1a1a1;}
 h2, h3, h4, h5, h6{
 	font-family: 'EBold', sans-serif;
