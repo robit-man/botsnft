@@ -58,13 +58,13 @@
 
     </Router>
     <div class="right-box">
-      <button on:click=><p style="display:flex;font-size:1.8rem;margin:auto;padding-left: 0.5rem;">Connect Wallet</p></button>
+      <button on:click=><p style="display:flex;font-size:1.8rem;margin:auto;padding-left: 0.5rem;padding-top: 0.25rem;">Connect Wallet</p></button>
 
     </div>
   </header>
     <script type="text/javascript" src="/script.js"></script>
     <footer>
-      <div class="footer-text"><p style="display:flex;"><b><i style="margin-right:0.5rem;">GURANFT </i></b> is a <b style="margin-left:0.5rem;margin-right:0.5rem;">GURACORP</b> Company 2021 · <a href="/intel">Intel</a>· <a href="">Contact</a></p></div>
+      <div class="footer-text"><p style="display:flex;"><b><i style="margin-right:0.5rem;">GURANFT </i></b> is a <b style="margin-left:0.5rem;margin-right:0.5rem;">GURACORPⓇ</b> Company 2021 · <a href="/intel">Intel</a>· <a href="">Contact</a></p></div>
     </footer>
 </div>
 <style>
@@ -96,6 +96,13 @@ header{
   height: 100px;
 }
 @media only screen and (max-width: 900px) {
+  .main-title{
+  margin-top:unset;}
+  header{flex-flow:wrap;}
+  .right-box{margin:auto;}
+  .left-box{margin:auto;}
+  header{height:auto;}
+  .footer-text{font-size:0.6rem;}
 }
 footer{
   position:absolute;
@@ -104,7 +111,7 @@ footer{
   justify-content:center;
   bottom:0px;
   left:0px;
-  width:100vw;
+  width:calc(100vw - 4rem);
   height:50px;
   padding-right:2rem;padding-left:2rem;}
 

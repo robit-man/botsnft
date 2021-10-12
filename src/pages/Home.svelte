@@ -29,22 +29,32 @@ function connectWallet(event) {
     connectEthProvider(false);
 }   
 var metadata = {
-     "name": "SpacePepesFTM",
-     "description": "STRINGS",
+     "name": "BOT #8",
+     "description": "GURA",
      "image": 'https://spacepepes.com/pepes/',
      "external_url": 'https://spacepepes.com/pepes/'
 };
 </script>
 
-<main>
-</main>
 
-<style type="text/scss">
- 
-@media screen and (min-width:900px){
+<div class="wrapper">
+  <div class="mint-box">
+    <img style="width:100vw;" src="/imgs/eye.png" alt="">
+  </div>
+</div>
 
-}
-@media screen and (max-width:900px){
 
+
+<style>
+.mint-box{width:auto;height: min-content;margin:auto;}
+.img-box{width:350px;height:350px;}
+.text-row{display:flex;flex-flow:row;justify-content: space-between;}
+.wrapper{    
+ position: absolute;
+ margin:auto;
+ left: 0px;
+ width:100vw;display:flex;flex-flow:row;justify-content:center;
+ top:calc(4rem + 100px);
+ height:calc(100vh - 150px - 4rem);
 }
 </style>

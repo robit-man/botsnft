@@ -1,8 +1,8 @@
 <script>
     //Help import data from opensea <3 
     export let nftlink = 'https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/42177050677546159779710000316165471247211713436920374376455667151256854462465';
-    export let nftimage = '/imgs/wind.svg';
-    export let nfttitle = 'STRING #1';
+    export let nftimage = '/imgs/bot.png';
+    export let nfttitle = 'GURA BOT #12';
     export let desc = 'Strings are a collection of unidimensional objects, pure in form, and vibrant in their variety of stochastic behavior. ';
     export let protocol = 'ERC-1155';
     export let owner = 'CA785C';
@@ -39,5 +39,30 @@
 
 </div>
 
+<div class="wrapper">
+    <div class="mint-box">
+      <div class="img-box">
+        <img src="{nftimage}" alt="">
+       </div>
+       <div class="text-row">
+         <p>{nfttitle}</p>
+         <p><b>1.0 ETH</b></p>
+       </div>
+    </div>
+ </div>
+ 
+
+
 <style>
+ .mint-box{width:350px;height: min-content;margin:auto;}
+ .img-box{width:350px;height:350px;}
+ .text-row{display:flex;flex-flow:row;justify-content: space-between;}
+ .wrapper{    
+   position: absolute;
+   margin:auto;
+   left: 0px;
+   width:100vw;display:flex;flex-flow:row;justify-content:center;
+   top:calc(4rem + 100px);
+   height:calc(100vh - 150px - 4rem);
+ }
 </style>

@@ -28,15 +28,27 @@
 </script>
 
     <div class="wrapper">
-       
+       <div class="mint-box">
+         <div class="img-box">
+           <img src="/imgs/bot.png" alt="">
+          </div>
+          <div class="text-row">
+            <p>GURA DROID</p>
+            <p><b>1.0 ETH</b></p>
+          </div>
+       </div>
     </div>
     
 
 
 <style>
+    .mint-box{width:350px;height: min-content;margin:auto;}
+    .img-box{width:350px;height:350px;}
+    .text-row{display:flex;flex-flow:row;justify-content: space-between;}
     .wrapper{    
       position: absolute;
       margin:auto;
+      left: 0px;
       width:100vw;display:flex;flex-flow:row;justify-content:center;
       top:calc(4rem + 100px);
       height:calc(100vh - 150px - 4rem);

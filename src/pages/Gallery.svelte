@@ -42,8 +42,9 @@ var metadata = {
     {#each paginatedItems as item}
       <li class="item">
         <div class="box">
-          <img src="" alt="">
-          {item}
+          <div class="img-constraint">
+            <img src="" alt="">
+          </div>
         </div>
       </li>
     {/each}
@@ -66,6 +67,7 @@ var metadata = {
 .wrapper{    
   position: absolute;
   margin:auto;
+  left: 0px;
   width:100vw;display:flex;flex-flow:row;justify-content:center;
   top:calc(4rem + 100px);
   height:calc(100vh - 150px - 4rem);
