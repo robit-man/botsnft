@@ -42,6 +42,7 @@
     "svelte": "^3.12.0",
     "svelte-app": "file:./",
     "svelte-audio-video": "^0.2.0",
+    "svelte-carousel": "^1.0.16",
     "svelte-easy-paginate": "^1.1.1",
     "svelte-routing": "^1.6.0",
     "svelte-speedometer": "^1.1.0",

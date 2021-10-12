@@ -5,6 +5,7 @@ import { Router, Link, Route } from "svelte-routing";
 import { address, contract, provider, nfts, balances } from '../store';
 import Card from "../cards/dex.svelte"
 import { Swiper, SwiperSlide } from 'swiper/svelte';
+import Carousel from 'svelte-carousel'
     //Help import data from opensea and pass into SwiperSlide <3 
     import { 
         initProvider,
@@ -37,28 +38,23 @@ var metadata = {
 
 
 <div class="wrapper">
-      
-  <ul class="items">
-    {#each paginatedItems as item}
-      <li class="item">
-        <div class="box">
-          <div class="img-constraint">
-            <img src="" alt="">
-          </div>
-        </div>
-      </li>
-    {/each}
-  </ul>
+  {#if !$address}
+  <div on:click={connect} style="" class="mint-button"><p>Connect Wallet</p></div>
+  {:else}
+    <Carousel class="test "
+  >
+ 
+  {#each $nfts as nft}
+    <div class="nft-card">
+      <div class="nft-card-inner">
+        <img transition:fade src="/forms/{nft['image']}" style="z-index:2;position:relative;width:256px" alt="">
+      </div>
+    </div>
+  {/each}
 
-  <PaginationNav
-    totalItems="{items.length}"
-    pageSize="{pageSize}"
-    currentPage="{currentPage}"
-    limit="{1}"
-    showStepOptions="{true}"
-    on:setPage="{(e) => currentPage = e.detail.page}"
-  />   
+  </Carousel>
   
+  {/if} 
 </div>
 
 

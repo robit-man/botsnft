@@ -40,6 +40,8 @@ p{
 	font-family: 'ENormal', sans-serif;
 }
 .mint-button{
+	margin:auto;
+	min-width:150px;
 	cursor:pointer;
   border:1px solid #656565;
   transition:all 0.2s ease;
