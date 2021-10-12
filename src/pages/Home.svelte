@@ -39,7 +39,7 @@ var metadata = {
 
 <div class="wrapper">
   <div class="mint-box">
-    <img style="width:100vw;" src="/imgs/eye.png" alt="">
+    <a href="/mint"><img style="width:100vw;" src="/imgs/eye.png" alt=""></a>
   </div>
 </div>
 
