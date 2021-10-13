@@ -2,10 +2,10 @@
     import { onMount } from "svelte";
     import { slide } from 'svelte/transition';
     import { Router, Link, Route } from "svelte-routing"; 
-    export let droidNumber = '73'
-    export let Owner = '0x01f801ea803'
-    export let Creator = '0x897808970896'
-    export let Price = '1.3'
+    export let droidNumber = '##'
+    export let Owner = '0x01f801..'
+    export let Creator = '0x897808..'
+    export let Price = '1.0'
     export let Type = 'Transparent Mask'
     export let Rarity = '10%'
     export let MintDate = '2021-10-09'
