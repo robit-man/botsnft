@@ -6,6 +6,7 @@ import { address, contract, provider, nfts, balances } from '../store';
 import Card from "../cards/dex.svelte"
 import { Swiper, SwiperSlide } from 'swiper/svelte';
 import Carousel from 'svelte-carousel'
+
     //Help import data from opensea and pass into SwiperSlide <3 
     import { 
         initProvider,
@@ -44,8 +45,7 @@ var metadata = {
   {#if !$address}
   <div on:click={connect} style="" class="mint-button"><p>Connect Wallet</p></div>
   {:else}
-    <Carousel class="test "
-  >
+  <Carousel>
  
   {#each $nfts as nft}
     <div class="nft-card">
@@ -71,5 +71,17 @@ var metadata = {
   top:calc(4rem + 100px);
   height:calc(100vh - 150px - 4rem);
 }
+.sc-carousel__carousel-container{
+  max-width: 1024px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.sc-carousel-arrow__circle{
+  background-color:transparent!important;
+
+}
+.sc-carousel-arrow__arrow-prev{transform:rotate(135deg)scale(2);}
+.sc-carousel-arrow__arrow-next{transform:rotate(-45deg)scale(2);}
 </style>
 
