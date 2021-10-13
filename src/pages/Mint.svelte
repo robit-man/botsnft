@@ -37,9 +37,9 @@
             <p><b>1.0 ETH</b></p>
           </div>
           {#if !$address}
-          <button on:click={connect} class="mint-button">CONNECT WALLET</button>
+          <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
         {:else}
-          <button on:click={mint} class="mint-button">MINT A VIEW</button>
+          <button on:click={mint} class="mint-button"><p>Mint A Droid</p></button>
           <br />{addressDisplay}  
         {/if} 
        </div>
@@ -48,8 +48,27 @@
 
 
 <style>
+  
+.mint-button{
+	margin:auto;
+  width:100%;
+	min-width:150px;
+	cursor:pointer;
+  border:1px solid #656565;
+  transition:all 0.2s ease;
+  border-radius:unset!important;
+}
+.mint-button > p{
+  transition:all 0.2s ease;
+  font-size:1rem;letter-spacing:2px;
+}
+.mint-button:hover{
+  background-color:#656565;
+}
+.mint-button:hover > p {color:#d8d7da;}
     .mint-box{width:350px;height: min-content;margin:auto;}
     .img-box{width:350px;height:350px;}
+    .img-box > img{width:100%;height:100%;}
     .text-row{display:flex;flex-flow:row;justify-content: space-between;}
     .wrapper{    
       position: absolute;
