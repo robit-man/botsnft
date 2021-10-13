@@ -18,7 +18,7 @@
         }
     }
 
-    function connectWallet(event) {
+    function connect(event) {
         connectEthProvider(false);
     }    
 
@@ -36,7 +36,12 @@
             <p>GURA DROID</p>
             <p><b>1.0 ETH</b></p>
           </div>
-          <div class="mint-button"><p>Connect Wallet</p></div>
+          {#if !$address}
+          <button on:click={connect} style="margin-left:unset;" class="button-padding">CONNECT WALLET</button>
+        {:else}
+          <button on:click={mint} style="margin-left:unset;" class="button-padding">MINT A VIEW</button>
+          <br />{addressDisplay}  
+        {/if}            
        </div>
     </div>
     

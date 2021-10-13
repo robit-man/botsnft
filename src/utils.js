@@ -16,7 +16,7 @@ import {
 import { abi } from './abis/SpacePepe.json';
 import { get } from 'svelte/store'
 
-const NFT_CONTRACT_ADDRESS = '0x0253D4Cf2049a5E0D9f99706074DCe5E7F296e52'
+const NFT_CONTRACT_ADDRESS = '0x3d2224B431c359b2876858436d3A94Db777ADEc7'
 export async function initProvider(app, reconnect = false) {
     var signer, addr, p;
     try {
@@ -89,7 +89,7 @@ export async function mintPepe() {
     const nftContract = get(contract)
     const signer = p.getSigner();
     try {
-        const resp = await nftContract.mint({ value: ethers.utils.parseEther('500') });
+        const resp = await nftContract.mint({ value: ethers.utils.parseEther('1') });
         etherLoading.set(true);
 
         await resp.wait().then(
@@ -138,12 +138,18 @@ function onDisconnect() {
     console.log("onDisconnect");
 }
 
-export async function subscribeToTransferEvent(provider,contract) {
-    const filter = {
-      topics: [ethers.utils.id('Transfer(address,address,uint256')]
-    };
-    provider.on(filter, async () => {
-        var total = await contract.totalSupply();
+export async function subscribeToTransferEvent(provider) {
+    var nftContract = get(contract);
+    var address = get(address);
+    nftContract.on("Transfer", async (from, to, nftid) => {
+        var nftContract = get(contract);
+        var total = await nftContract.currentTokenId();
         totalSupply.set(total)
+        var resp = await fetch('/.netlify/functions/get_gallery', {
+            method: 'POST',
+            body: JSON.stringify({})
+        })
+        resp = await (await (resp).json())
+        nfts.set(resp);
     });
   }
