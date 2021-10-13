@@ -6,11 +6,15 @@
     import Four from "./pages/Four.svelte";
     import Gallery from "./pages/Gallery.svelte"
     export let url = '';
+    import { address, contract, provider, nfts, balances } from './store';
     import { setContext } from 'svelte';
     import { writable } from 'svelte/store';
     import { fade } from 'svelte/transition';
     import { Audio, Video } from 'svelte-audio-video'
-
+    import { 
+        initProvider,
+        mintPepe,
+    } from './utils.js';
   const track = {
     attach: (element, _track) => {
       // when fired, do whatever is needed to attach the track
@@ -22,6 +26,22 @@
       // Note: `this` refers to the `track` object
     },
   }
+  var addressDisplay = ''
+    async function connectEthProvider(reconnect=false) {
+        if(!$address) {
+            await initProvider(app, reconnect);
+            addressDisplay = String($address).slice(0,10)+"...";
+            $address = $address;
+        }
+    }
+
+    function connect(event) {
+        connectEthProvider(false);
+    }    
+
+    async function mint(event) {
+      await mintPepe(contract, provider);
+    }
     const app = writable({});
     //export const innerHeight = writable(1000)
     //export const innerWidth = writable(1000) Any use for these
@@ -58,8 +78,11 @@
 
     </Router>
     <div class="right-box">
-      <div class="mint-button wallet-button"><p>Connect Wallet</p></div>
-
+      {#if !$address}
+      <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
+    {:else}
+    <a href="/mint"><button class="mint-button"><p>Go To Mint</p></button></a>
+    {/if} 
     </div>
   </header>
     <script type="text/javascript" src="/script.js"></script>
@@ -74,6 +97,23 @@
 		margin: 0 auto;
     
 	}
+.mint-button{
+	margin:auto;
+  width:100%;
+	min-width:150px;
+	cursor:pointer;
+  border:1px solid #656565;
+  transition:all 0.2s ease;
+  border-radius:unset!important;
+}
+.mint-button > p{
+  transition:all 0.2s ease;
+  font-size:1rem;letter-spacing:2px;
+}
+.mint-button:hover{
+  background-color:#656565;
+}
+.mint-button:hover > p {color:#d8d7da;}
   .main-title{
     transform: scaleX(1.4);
         letter-spacing: 0px;margin-top: 1.5rem;
