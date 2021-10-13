@@ -29,11 +29,12 @@ function connectWallet(event) {
     connectEthProvider(false);
 }   
 var metadata = {
-     "name": "BOT #8",
-     "description": "GURA",
-     "image": 'https://spacepepes.com/pepes/',
-     "external_url": 'https://spacepepes.com/pepes/'
+  "name": "Guracorp",
+  "description": "100 GURA® NFT is a collection designed to celebrate a bespoke vision from the future. Where passion for ScienceFiction fuses with Aesthetics and a new wave of mechanical sophistication enters the world. With a touch of personal character, we Introduce a batch of robots. Every one of them, Unique & Serialized.",
+  "image": 'https://guranft.com/guras/',
+  "external_url": 'https://guranft.com/guras/'
 };
+
 </script>
 
 

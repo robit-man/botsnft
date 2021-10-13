@@ -28,11 +28,12 @@ function connectWallet(event) {
     connectEthProvider(false);
 }   
 var metadata = {
-     "name": "SpacePepesFTM",
-     "description": "100 SpacePepe's from an unknown F-type main sequence star have received an arrival beacon through Lieutenant Pepe that extraterrestrial contact with Earth has been established. They want to use the energy of the earthlings living there and establish a permanent settlement. Though they look terrifying, these SpacePepes are smart creatures that love the fine arts like the Opera.",
-     "image": 'https://spacepepes.com/pepes/',
-     "external_url": 'https://spacepepes.com/pepes/'
+  "name": "Guracorp",
+  "description": "100 GURA® NFT is a collection designed to celebrate a bespoke vision from the future. Where passion for ScienceFiction fuses with Aesthetics and a new wave of mechanical sophistication enters the world. With a touch of personal character, we Introduce a batch of robots. Every one of them, Unique & Serialized.",
+  "image": 'https://guranft.com/guras/',
+  "external_url": 'https://guranft.com/guras/'
 };
+
 </script>
 
 
