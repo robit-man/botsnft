@@ -23,13 +23,13 @@ function returnSuccess(data, statusCode = 200) {
   }
 }
 exports.handler = async function(event) {
-    provider = await ethers.getDefaultProvider('https://rpcapi.fantom.network')
+    provider = await ethers.getDefaultProvider(process.env.ALCHEMY_KEY)
     const nftContract = new ethers.Contract(process.env.NFT_CONTRACT_ADDRESS, abi, provider);
     var currentNft = await nftContract.currentTokenId();
     currentNft = parseInt(currentNft.toString())
     
     try {
-        const ref = await client.query(q.Paginate(q.Match(q.Index('all_pepes')), {size:100} ) )
+        const ref = await client.query(q.Paginate(q.Match(q.Index('eth_guracorp')), {size:100} ) )
         if(ref.data.length == 0) {
             return returnError('No pepes');
         }

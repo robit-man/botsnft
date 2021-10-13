@@ -37,11 +37,11 @@
             <p><b>1.0 ETH</b></p>
           </div>
           {#if !$address}
-          <button on:click={connect} style="margin-left:unset;" class="button-padding">CONNECT WALLET</button>
+          <button on:click={connect} class="mint-button">CONNECT WALLET</button>
         {:else}
-          <button on:click={mint} style="margin-left:unset;" class="button-padding">MINT A VIEW</button>
+          <button on:click={mint} class="mint-button">MINT A VIEW</button>
           <br />{addressDisplay}  
-        {/if}            
+        {/if} 
        </div>
     </div>
     

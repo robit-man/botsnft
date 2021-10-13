@@ -33,7 +33,6 @@ export async function initProvider(app, reconnect = false) {
 
     var nid = await p.getNetwork()
     var nftContract = new ethers.Contract(NFT_CONTRACT_ADDRESS, abi, signer);
-    var minted = await nftContract.minted(addr)
     var total = await nftContract.currentTokenId();
     var supply = await nftContract.MAX_SUPPLY();
 
@@ -42,7 +41,6 @@ export async function initProvider(app, reconnect = false) {
     contract.set(nftContract);
     network.set(nid.chainId);
     provider.set(p);
-    alreadyMinted.set(minted);
     maxSupply.set(supply);
 
     var baseURI = await nftContract.baseTokenURI();
