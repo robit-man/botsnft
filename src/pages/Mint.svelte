@@ -40,7 +40,7 @@
           <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
         {:else}
           <button on:click={mint} class="mint-button"><p>Mint A Droid</p></button>
-          <br />{addressDisplay}  
+          <br><br>{addressDisplay}  
         {/if} 
        </div>
     </div>

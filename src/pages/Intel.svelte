@@ -9,7 +9,7 @@
     export let Type = 'Transparent Mask'
     export let Rarity = '10%'
     export let MintDate = '2021-10-09'
-    export let Location = 'The etherlands'
+    export let Location = 'The Etherlands'
     </script>
     
 

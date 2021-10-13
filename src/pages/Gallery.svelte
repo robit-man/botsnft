@@ -39,23 +39,20 @@ var metadata = {
 
 
 <div class="wrapper">
-  {#if !$address}
-  <div on:click={connect} style="" class="mint-button"><p>Connect Wallet</p></div>
-  {:else}
-    <Carousel class="test "
-  >
- 
-  {#each $nfts as nft}
-    <div class="nft-card">
-      <div class="nft-card-inner">
-        <img transition:fade src="/guras/{nft['image']}" style="z-index:2;position:relative;width:256px" alt="">
-      </div>
-    </div>
-  {/each}
 
-  </Carousel>
-  
-  {/if} 
+   
+  <Carousel>
+ 
+{#each $nfts as nft}
+<div class="nft-card">
+  <div class="nft-card-inner">
+    <img transition:fade src="/guras/{nft['image']}" style="z-index:2;position:relative;width:256px;height:256px;" alt="">
+  </div>
+</div>
+{/each}
+
+</Carousel>
+ 
 </div>
 
 
