@@ -16,7 +16,7 @@
     <div class="wrapper">
         <div class="mint-box">
           <div class="img-box">
-            <img src="/imgs/bot.png" alt="">
+            <img src="/imgs/droid.gif" alt="">
            </div>
            <div class="text-area">
                <div class="nft-title-area">

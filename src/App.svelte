@@ -40,7 +40,7 @@
       
       <div class="left-box">
                 <Link to="/">
-        <h1 class="main-title">GURA</h1></Link>
+        <img src="/imgs/GURA Registered.svg" alt=""></Link>
       </div>
 
       <nav>
