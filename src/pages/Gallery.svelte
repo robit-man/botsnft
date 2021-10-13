@@ -71,17 +71,5 @@ var metadata = {
   top:calc(4rem + 100px);
   height:calc(100vh - 150px - 4rem);
 }
-.sc-carousel__carousel-container{
-  max-width: 1024px;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-}
-.sc-carousel-arrow__circle{
-  background-color:transparent!important;
-
-}
-.sc-carousel-arrow__arrow-prev{transform:rotate(135deg)scale(2);}
-.sc-carousel-arrow__arrow-next{transform:rotate(-45deg)scale(2);}
 </style>
 
