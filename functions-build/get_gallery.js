@@ -34,7 +34,7 @@ exports.handler = async function(event) {
             return returnError('No pepes');
         }
         res = await client.query(ref.data.map(n => q.Get(n)))
-        var pepes = res.map(n => n.data);
+        pepes = ref.data
         return returnSuccess(pepes.slice(0,currentNft));
     }
     catch(error) {
