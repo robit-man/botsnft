@@ -29,7 +29,7 @@ exports.handler = async function(event) {
     currentNft = parseInt(currentNft.toString())
     
     try {
-        const ref = await client.query(q.Paginate(q.Match(q.Index('eth_guracorp')), {size:100} ) )
+        const ref = await client.query(q.Paginate(q.Match(q.Index('eth_guracorp_by_id')), {size:100} ) )
         if(ref.data.length == 0) {
             return returnError('No pepes');
         }
