@@ -6,27 +6,30 @@ import { address, contract, provider, nfts, balances } from '../store';
 import Card from "../cards/dex.svelte"
 import { Swiper, SwiperSlide } from 'swiper/svelte';
 import Carousel from 'svelte-carousel'
+
     //Help import data from opensea and pass into SwiperSlide <3 
     import { 
         initProvider,
+        mintPepe,
     } from '../utils.js';
-import 'swiper/css';
-import { paginate, PaginationNav } from 'svelte-easy-paginate'
 
-  let items = []
-  let currentPage = 1
-  let pageSize = 4
-  $: paginatedItems = paginate({ items, pageSize, currentPage })
-async function connectEthProvider(reconnect=false) {
-    if(!$address) {
-        await initProvider(app, reconnect);
-        $address = $address;
+    const app = getContext('app');
+    var addressDisplay = ''
+    async function connectEthProvider(reconnect=false) {
+        if(!$address) {
+            await initProvider(app, reconnect);
+            addressDisplay = String($address).slice(0,10)+"...";
+            $address = $address;
+        }
     }
-}
 
-function connectWallet(event) {
-    connectEthProvider(false);
-}   
+    function connect(event) {
+        connectEthProvider(false);
+    }    
+
+    async function mint(event) {
+      await mintPepe(contract, provider);
+    }
 var metadata = {
   "name": "Guracorp",
   "description": "100 GURA® NFT is a collection designed to celebrate a bespoke vision from the future. Where passion for ScienceFiction fuses with Aesthetics and a new wave of mechanical sophistication enters the world. With a touch of personal character, we Introduce a batch of robots. Every one of them, Unique & Serialized.",
@@ -42,13 +45,12 @@ var metadata = {
   {#if !$address}
   <div on:click={connect} style="" class="mint-button"><p>Connect Wallet</p></div>
   {:else}
-    <Carousel class="test "
-  >
+  <Carousel>
  
   {#each $nfts as nft}
     <div class="nft-card">
       <div class="nft-card-inner">
-        <img transition:fade src="/guras/{nft['image']}" style="z-index:2;position:relative;width:256px" alt="">
+        <img transition:fade src="/guras/{nft['image']}" style="z-index:2;position:relative;height:256px;width:256px" alt="">
       </div>
     </div>
   {/each}
