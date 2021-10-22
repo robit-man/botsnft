@@ -33,7 +33,6 @@ exports.handler = async function(event) {
         if(ref.data.length == 0) {
             return returnError('No pepes');
         }
-        res = await client.query(ref.data.map(n => q.Get(n)))
         pepes = ref.data
         return returnSuccess(pepes.slice(0,currentNft));
     }
