@@ -131,10 +131,10 @@ header{
   z-index:5;
   position:relative;
   display:flex;
-  flex-flow:row;
+  flex-flow:wrap;
   justify-content: space-between;
   padding: 2rem;
-  height: 100px;
+  height: auto;
 }
 @media only screen and (max-width: 900px) {
   .main-title{
