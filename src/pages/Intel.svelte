@@ -73,7 +73,7 @@
     
     .img-box > img{width:auto;height:auto;}
          .text-area{text-align:left;margin-left:0rem;display:flex;flex-flow:column;justify-content: space-between;}
-
+	.wrapper{position:relative;margin:2rem auto!important;top:auto!important;height:auto!important;}
     .mint-box{width:auto;height: min-content;margin:auto;display:flex;flex-flow:column;max-height: 100%;overflow-y:auto;overflow-x:hidden;}
 
 }
