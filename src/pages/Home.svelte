@@ -50,13 +50,15 @@ var metadata = {
 .mint-box{width:auto;height: min-content;margin:auto;}
 .img-box{width:350px;height:350px;}
 .text-row{display:flex;flex-flow:row;justify-content: space-between;}
-.wrapper{    
- position: relative;
- margin:auto;
- left: -2rem;
- width:100vw;display:flex;flex-flow:row;justify-content:center;
- top:calc(4rem + 100px);
- height:calc(100vh - 150px - 4rem);
-    min-height:50vh;
+.wrapper{  position: relative;
+margin: auto;
+left: -2rem;
+width: 100vw;
+display: flex;
+flex-flow: row;
+justify-content: center;
+top: auto;
+height: 80vh;
+min-height: 50vh;
 }
 </style>
