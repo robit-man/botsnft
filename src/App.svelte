@@ -69,6 +69,14 @@
         <Link to="intel"><p style="font-size:1.8rem;margin:0rem 1rem;">Intel</p></Link>
       </nav>
     
+    <div class="right-box">
+      {#if !$address}
+      <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
+    {:else}
+    <a href="/mint"><button class="mint-button"><p>Go To Mint</p></button></a>
+    {/if} 
+    </div>
+	    
         <Route path="/"><Home /></Route>
         <Route path="/mint" component={Mint}><Mint /></Route>
         <Route path="/mint"><Mint /></Route>
@@ -77,13 +85,6 @@
         <Route path="/*"><Four /></Route>
 
     </Router>
-    <div class="right-box">
-      {#if !$address}
-      <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
-    {:else}
-    <a href="/mint"><button class="mint-button"><p>Go To Mint</p></button></a>
-    {/if} 
-    </div>
   </header>
     <script type="text/javascript" src="/script.js"></script>
     <footer>
