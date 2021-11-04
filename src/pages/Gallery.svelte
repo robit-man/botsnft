@@ -71,5 +71,8 @@ var metadata = {
   top:calc(4rem + 100px);
   height:calc(100vh - 150px - 4rem);
 }
+	@media screen and (max-width:900px){
+	.wrapper{position:relative;margin:2rem auto!important;top:auto!important;height:auto!important;}
+	}
 </style>
 
