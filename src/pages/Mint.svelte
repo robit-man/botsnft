@@ -71,7 +71,7 @@
     .img-box > img{width:100%;height:100%;}
     .text-row{display:flex;flex-flow:row;justify-content: space-between;}
     .wrapper{    
-      position: absolute;
+      position: relative;
       margin:auto;
       left: 0px;
       width:100vw;display:flex;flex-flow:row;justify-content:center;
