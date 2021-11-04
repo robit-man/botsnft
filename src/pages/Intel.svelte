@@ -49,7 +49,7 @@
      .img-box > img{width:512px;height:512px;}
      .text-area{text-align:left;margin-left:4rem;display:flex;flex-flow:column;justify-content: space-between;}
      .wrapper{    
-       position: absolute;
+       position: relative;
        margin:auto;
        left: 0px;
        width:100vw;display:flex;flex-flow:row;justify-content:center;
