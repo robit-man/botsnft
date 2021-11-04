@@ -64,7 +64,7 @@ var metadata = {
 
 <style>
 .wrapper{    
-  position: absolute;
+  position: relative;
   margin:auto;
   left: 0px;
   width:100vw;display:flex;flex-flow:row;justify-content:center;
