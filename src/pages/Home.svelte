@@ -57,6 +57,6 @@ var metadata = {
  width:100vw;display:flex;flex-flow:row;justify-content:center;
  top:calc(4rem + 100px);
  height:calc(100vh - 150px - 4rem);
-    min-height:80vh;
+    min-height:50vh;
 }
 </style>
