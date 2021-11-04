@@ -145,7 +145,7 @@ header{
   .footer-text{font-size:0.6rem;}
 }
 footer{
-  position:absolute;
+  position:relative;
   display:flex;
   flex-flow:row;
   justify-content:center;
