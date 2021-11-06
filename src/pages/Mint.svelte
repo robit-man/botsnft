@@ -71,11 +71,15 @@
     .img-box > img{width:100%;height:100%;}
     .text-row{display:flex;flex-flow:row;justify-content: space-between;}
     .wrapper{    
-      position: absolute;
+      position: relative;
       margin:auto;
       left: 0px;
       width:100vw;display:flex;flex-flow:row;justify-content:center;
       top:calc(4rem + 100px);
       height:calc(100vh - 150px - 4rem);
     }
+	@media screen and (max-width:900px){
+	.wrapper{position:relative;margin:2rem auto!important;top:auto!important;height:auto!important;}
+	}
+	
 </style>
