@@ -40,7 +40,7 @@ var metadata = {
 
 <div class="wrapper">
   <div class="" id="hero">
-    <h1 style="font-size:20rem;max-width:calc(100vw - 200px);position:fixed;top:0px;right:50px;text-align:left;z-index:2;color:white;line-height:1;margin:unset;" >THIS IS THE TITLE TO AN NFT PROJECT!</h1>
+    <h1 style="font-size:16rem;max-width:calc(100vw - 250px);position:fixed;top:50px;right:50px;text-align:left;z-index:2;color:white;line-height:1.2;margin:unset;" >THIS IS THE TITLE TO AN NFT PROJECT!</h1>
     <body translate="no" style="overflow:hidden!important;">
   <style>#defaultCanvas0{position:fixed;top:0px;right:0px;}#defaultCanvas1{position:fixed;top:0px;right:0px;}</style>
       <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
