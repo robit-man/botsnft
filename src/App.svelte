@@ -55,40 +55,36 @@
           src="/"
           type="audio/mp3" />
       </Audio>
-	<header>
     <Router url="{url}">
-      
-      <div class="left-box">
-                <Link to="/">
-        <img src="/imgs/GURA Registered.svg" alt=""></Link>
-      </div>
-
-      <nav>
-        <Link to="mint"><p style="font-size:1.8rem;margin:0rem 1rem;">Mint</p></Link>
-        <Link to="gallery"><p style="font-size:1.8rem;margin:0rem 1rem;">Gallery</p></Link>
-        <Link to="intel"><p style="font-size:1.8rem;margin:0rem 1rem;">Intel</p></Link>
-      </nav>
-    
-    <div class="right-box">
-      {#if !$address}
-      <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
-    {:else}
-    <a href="/mint"><button class="mint-button"><p>Go To Mint</p></button></a>
-    {/if} 
-    </div>
-	    
+      <header>
+        <div class="left-box">
+                  <Link to="/"><h2>▲⏹⏺</h2><p>TITLE</p></Link>
+        </div>
+        <nav>
+          <Link to="mint"><p style="font-size:1.8rem;margin:0rem 1rem;">Mint</p></Link>
+          <Link to="gallery"><p style="font-size:1.8rem;margin:0rem 1rem;">Gallery</p></Link>
+          <Link to="intel"><p style="font-size:1.8rem;margin:0rem 1rem;">Intel</p></Link>
+        </nav>
+        <div class="right-box">
+          {#if !$address}
+          <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
+        {:else}
+        <a href="/mint"><button class="mint-button"><p>Go To Mint</p></button></a>
+        {/if} 
+        </div>
+      </header>
+	    <div class="router-window">
         <Route path="/"><Home /></Route>
         <Route path="/mint" component={Mint}><Mint /></Route>
         <Route path="/mint"><Mint /></Route>
         <Route path="/intel" component={Intel}><Intel /></Route>
         <Route path="/gallery" component={Gallery}></Route>
         <Route path="/*"><Four /></Route>
-
+      </div>
     </Router>
-  </header>
+
     <script type="text/javascript" src="/script.js"></script>
     <footer>
-      <div class="footer-text"><p style="display:flex;"><b><i style="margin-right:0.5rem;">GURANFT </i></b> is a <b style="margin-left:0.5rem;margin-right:0.5rem;">GURACORPⓇ</b> Company 2021 · <a href="/intel">Intel</a>· <a href="">Contact</a></p></div>
     </footer>
 </div>
 <style>
@@ -100,41 +96,39 @@
 	}
 .mint-button{
 	margin:auto;
+  padding: 0rem 1rem;
   width:100%;
-	min-width:150px;
+	min-width:auto;
 	cursor:pointer;
-  border:1px solid #656565;
+  border:1px solid #65656555;
   transition:all 0.2s ease;
   border-radius:unset!important;
+  font-weight:100;
 }
 .mint-button > p{
   transition:all 0.2s ease;
-  font-size:1rem;letter-spacing:2px;
 }
 .mint-button:hover{
-  background-color:#656565;
+  background-color:#65656555;
 }
-.mint-button:hover > p {color:#d8d7da;}
-  .main-title{
-    transform: scaleX(1.4);
-        letter-spacing: 0px;margin-top: 1.5rem;
-        margin-bottom: 1.5rem;}
-  .left-box{width:220px;display:flex;flex-flow:column;justify-content: center;}
-  .right-box{width:220px;display:flex;flex-flow:column;justify-content: center;}
+  
   nav{display:flex;
-    flex-flow:row;
+    flex-flow:row-reverse;
     justify-content:center;
     height:auto;
-    margin:auto;}
+    transform:rotate(-90deg);
+    margin:unset;}
 button{margin:1rem;}
 header{
   z-index:5;
-  position:relative;
+  position:fixed;
   display:flex;
-  flex-flow:wrap;
+  left:0px;width:100px;
+  flex-flow:column;
+  background:white;
   justify-content: space-between;
   padding: 2rem;
-  height: auto;
+  height: calc(100vh - 4rem);
 }
 @media only screen and (max-width: 900px) {
   .main-title{

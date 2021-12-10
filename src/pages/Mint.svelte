@@ -30,7 +30,7 @@
     <div class="wrapper">
        <div class="mint-box">
          <div class="img-box">
-           <img src="/imgs/droid.gif" alt="">
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5bPzhGi7YN02AYZ7jXEXCMAV2A5F0xzc_k3TIN7vu9zMUPcssZkCW_ta-VJBOimriCA8&usqp=CAU" alt="">
           </div>
           <div class="text-row">
             <p>GURA DROID</p>
