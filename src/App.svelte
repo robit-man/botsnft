@@ -109,7 +109,7 @@
   transition:all 0.2s ease;
 }
 .mint-button:hover{
-  background-color:#65656555;
+  background-color:black;
 }
   
   nav{display:flex;
