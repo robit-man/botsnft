@@ -42,7 +42,7 @@ var metadata = {
 <div class="wrapper ">
 <div class="escher">
   <div class="hero " id="hero">
-    <h1 style="margin:auto;font-size:20rem;max-width:calc(100vw - 250px);position:relative;text-align:center;z-index:2;color:white;line-height:1;padding:2rem;mix-blend-mode:difference;" >thi<b style="animation: flash3 2s ease alternate infinite;">s</b> is <b style="animation: flash3 4s ease alternate infinite;">a</b>n nf<b style="animation: flash3 5s ease alternate infinite;">t</b></h1>
+    <h1 style="margin:auto;font-size:20rem;max-width:calc(100vw - 250px);position:relative;text-align:center;z-index:2;color:white;line-height:1;padding:2rem;mix-blend-mode:normal;" >thi<b style="animation: flash3 2s ease alternate infinite;">s</b> is <b style="animation: flash3 4s ease alternate infinite;">a</b>n nf<b style="animation: flash3 5s ease alternate infinite;">t</b></h1>
    
   </div>
 </div>
@@ -144,12 +144,12 @@ var metadata = {
           {#if !$address}
           <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
           {:else}
-            <button on:click={mint} class="mint-button"><p>Mint A Droid</p></button>
+            <button on:click={mint} class="mint-button"><p>Mint</p></button>
             <br><br>{addressDisplay}  
           {/if} 
         </div>
         <div class="image-box" style="box-shadow:1rem 1rem black;border-radius:4px;">
-          <iframe src="/metamask.html" class="metamask-container" frameborder="0"></iframe>
+            <iframe src="https://mandelviews.netlify.app/metamask.html" title="metamask" target="" frameborder="0" class="metamask-container"></iframe>
         </div>
       </div>
     </div>
@@ -165,6 +165,7 @@ var metadata = {
 
 
 <style>
+  
   .metamask-container {
     overflow: hidden;
     height: 512px;
