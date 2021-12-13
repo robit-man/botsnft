@@ -42,7 +42,7 @@ var metadata = {
 <div class="wrapper ">
 <div class="escher">
   <div class="hero " id="hero">
-    <h1 style="max-width:calc(100vw - 250px);position:relative;text-align:center;z-index:2;color:white;line-height:1;padding:2rem;mix-blend-mode:normal;" >thi<b style="animation: flash3 2s ease alternate infinite;">s</b> is <b style="animation: flash3 4s ease alternate infinite;">a</b>n nf<b style="animation: flash3 5s ease alternate infinite;">t</b></h1>
+    <h1 style="position:relative;text-align:center;z-index:2;color:white;line-height:1;padding:2rem;mix-blend-mode:normal;" >thi<b style="animation: flash3 2s ease alternate infinite;">s</b> is <b style="animation: flash3 4s ease alternate infinite;">a</b>n nf<b style="animation: flash3 5s ease alternate infinite;">t</b></h1>
    
   </div>
 </div>
@@ -135,7 +135,7 @@ var metadata = {
   <div class="" id="mint">
     <div class="area" style="">
       
-      <div class="text-image-row">
+      <div class="text-image-row wrap-reverse">
         <div class="text-box">
           <h1>
             MINT AN NFT's
@@ -148,7 +148,7 @@ var metadata = {
             <br><br>{addressDisplay}  
           {/if} 
         </div>
-        <div class="image-box" style="box-shadow:1rem 1rem black;border-radius:4px;">
+        <div class="image-box" style="">
             <iframe src="https://mandelviews.netlify.app/metamask.html" title="metamask" target="" frameborder="0" class="metamask-container"></iframe>
         </div>
       </div>
@@ -185,7 +185,8 @@ var metadata = {
  }
  .backdrop{width:calc(100vw - 164px);
     height: 100vh;
-    position: fixed;
+    width:100vw;
+    position: absolute;
     pointer-events:none;
     z-index: 0;
     display: block;
