@@ -4,12 +4,12 @@
     import Mint from "./pages/Mint.svelte";
     import Intel from "./pages/Intel.svelte";
     import Four from "./pages/Four.svelte";
+    import { fly, fade, slide } from 'svelte/transition';
     import Gallery from "./pages/Gallery.svelte"
     export let url = '';
     import { address, contract, provider, nfts, balances } from './store';
     import { setContext } from 'svelte';
     import { writable } from 'svelte/store';
-    import { fade } from 'svelte/transition';
     import { Audio, Video } from 'svelte-audio-video'
     import { 
         initProvider,
@@ -58,16 +58,16 @@
     <Router url="{url}">
       <header>
         <div class="left-box">
-                  <Link to="/"><h2>▲⏹⏺</h2><p>TITLE</p></Link>
+                  <Link to="/"><img src="/imgs/impossible-triangle.svg" width="100px" height="100px" alt=""></Link>
         </div>
         <nav>
-          <Link to="mint"><p style="font-size:1.8rem;margin:0rem 1rem;">Mint</p></Link>
-          <Link to="gallery"><p style="font-size:1.8rem;margin:0rem 1rem;">Gallery</p></Link>
-          <Link to="intel"><p style="font-size:1.8rem;margin:0rem 1rem;">Intel</p></Link>
+          <Link to="mint"><p transition:fade="{{ y: 200, duration: 2000 }}" style="font-size:1.8rem;margin:0rem 1rem;">Mint</p></Link>
+          <Link to="gallery"><p transition:fade="{{ y: 300, duration: 2000 }}" style="font-size:1.8rem;margin:0rem 1rem;">Gallery</p></Link>
+          <Link to="intel"><p transition:fade="{{ y: 400, duration: 2000 }}" style="font-size:1.8rem;margin:0rem 1rem;">Intel</p></Link>
         </nav>
         <div class="right-box">
           {#if !$address}
-          <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
+          <button on:click={connect} class="mint-button"></button>
         {:else}
         <a href="/mint"><button class="mint-button"><p>Go To Mint</p></button></a>
         {/if} 
@@ -96,28 +96,36 @@
 	}
 .mint-button{
 	margin:auto;
-  padding: 0rem 1rem;
-  width:100%;
+  width:100px;
 	min-width:auto;
 	cursor:pointer;
-  border:1px solid #65656555;
+  height:100px;
+  border-radius:4px;
+  border:0px solid black;
   transition:all 0.2s ease;
-  border-radius:unset!important;
   font-weight:100;
+  box-shadow:unset;
+  padding:16px;
+  background-image:url('/imgs/wallet(1).svg');
 }
 .mint-button > p{
   transition:all 0.2s ease;
 }
 .mint-button:hover{
-  background-color:black;
+  background-image:url('/imgs/wallet(2).svg');
+  background-color:transparent;  
+  border:0px solid white;
+
 }
   
   nav{display:flex;
     flex-flow:row-reverse;
-    justify-content:center;
+    justify-content:space-evenly;
     height:auto;
     transform:rotate(-90deg);
-    margin:unset;}
+    margin:unset;
+    text-transform:uppercase;
+}
 button{margin:1rem;}
 header{
   z-index:5;

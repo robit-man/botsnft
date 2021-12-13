@@ -28,6 +28,8 @@
 </script>
 
     <div class="wrapper">
+
+      <div class="area">
        <div class="mint-box">
          <div class="img-box">
            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5bPzhGi7YN02AYZ7jXEXCMAV2A5F0xzc_k3TIN7vu9zMUPcssZkCW_ta-VJBOimriCA8&usqp=CAU" alt="">
@@ -43,6 +45,8 @@
           <br><br>{addressDisplay}  
         {/if} 
        </div>
+      </div>
+      
     </div>
     
 
