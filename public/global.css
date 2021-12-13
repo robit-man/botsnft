@@ -97,6 +97,9 @@ p{
 	
 	100%{filter:invert(0);}
 }
+.menu{background: white;
+	mix-blend-mode: exclusion;
+	margin: 0.5rem;}
 .subheader{
 	display:flex;flex-flow:row;
     font-size: 1rem!important;
@@ -111,6 +114,8 @@ p{
 #gallery > .column > img:hover{
 	transform:scale(1.1);box-shadow:0px 2px 5px rgba(0,0,0,0.2);
 }
+.active{left:0px!important;}
+.active2{left:0px!important;}
 
 .mint-button{
 	min-width:150px;
@@ -126,6 +131,41 @@ p{
 .mint-button:hover{
   background-color:#000000;
 }
+#menu1 {
+
+        width: 25px; 
+        height: 2px; 
+        position: absolute;
+        background: #000000; 
+        right: 0;
+        margin: auto;
+        left: 0;
+        border-radius: 1px;
+        transition: all 0.34s cubic-bezier(0.5, 0.1, 0, 1.5);
+        width:25;top: calc(50% - ((3px)) + -2px);
+}
+
+#menu2 {
+
+        width: 25px; 
+        height: 2px; 
+        position: absolute;
+        background: #000000; 
+        right: 0;
+        margin: auto;
+        left: 0;
+        border-radius: 1px;
+        transition: all 0.34s cubic-bezier(0.5, 0.1, 0, 1.5);
+        width:25;top: calc(50% - ((3px)) + 2px);
+
+}.active3{
+    transform: rotate(225deg);
+    top: calc(50% - (1px)) !important;
+    width: 25px !important;}
+.active4{
+  transform: rotate(-225deg);
+    top: calc(50% - (1px)) !important;
+    width: 25px !important;}
 .mint-button:hover > p {color:#ffffff;}
 .light{color:#a1a1a1;}
 h2, h3, h4, h5, h6{
@@ -167,10 +207,11 @@ label {
 input:disabled {
 }
 .text-image-row{
-	display:flex;flex-flow:row;justify-content: space-evenly;
+	display:flex;flex-flow:wrap;justify-content: space-evenly;
+	max-width:1080px;margin:auto;
 }
 .text-box{
-	text-align:left;
+	text-align:left;max-width: 512px;
 }
 .area{background:white;padding:8rem 2rem ;}
 button {
@@ -189,10 +230,9 @@ button:hover {
 	background: #4d4fc8;
 	opacity: 0.5;
 }
-  .wrapper{background:white;width:calc(100vw - 164px);left:164px;position:absolute;height: 100vh;
+  .wrapper{background:white;width:100%;left:164px;position:absolute;height: 100vh;
 	overflow-y:auto;}
 	     
 @media only screen and (max-width: 900px) {
-	.wallet-button{margin-top:1rem;}
-   .wrapper{position:relative;margin:2rem auto!important;top:auto!important;height:auto!important;}
+
   }

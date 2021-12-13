@@ -34,7 +34,7 @@
             $address = $address;
         }
     }
-
+    
     function connect(event) {
         connectEthProvider(false);
     }    
@@ -47,6 +47,13 @@
     //export const innerWidth = writable(1000) Any use for these
     setContext('app', app);
     console.log(window.location.href);
+
+    function toggle(event){
+      document.getElementById("sidebar").classList.toggle('active');
+      document.getElementById("window").classList.toggle('active2');
+      document.getElementById("menu1").classList.toggle('active3');
+      document.getElementById("menu2").classList.toggle('active4');
+    }
 </script>
 
 <div class="main">
@@ -55,8 +62,9 @@
           src="/"
           type="audio/mp3" />
       </Audio>
+      <div class="menu" on:click={toggle} style="position: fixed;z-index: 10;transition: all 0.34s;position: relative;width: 45px;height: 45px;border-radius: 100%;cursor: pointer;"><div class="menu_part" id="menu1" style=""></div><div class="menu_part" id="menu2" style=""></div></div>
     <Router url="{url}">
-      <header>
+      <header id="sidebar">
         <div class="left-box">
                   <Link to="/"><img src="/imgs/impossible-triangle.svg" width="100px" height="100px" alt=""></Link>
         </div>
@@ -73,7 +81,7 @@
         {/if} 
         </div>
       </header>
-	    <div class="router-window">
+	    <div class="router-window" id="window">
         <Route path="/"><Home /></Route>
         <Route path="/mint" component={Mint}><Mint /></Route>
         <Route path="/mint"><Mint /></Route>
@@ -94,6 +102,10 @@
 		margin: 0 auto;
     
 	}
+  .router-window{
+    left:-164px;transition:all 0.2s ease;
+    top:0px;position:fixed;
+  }
 .mint-button{
 	margin:auto;
   width:100px;
@@ -127,36 +139,25 @@
     text-transform:uppercase;
 }
 button{margin:1rem;}
-header{
+#sidebar{
+  top:0px;
   z-index:5;
   position:fixed;
   display:flex;
-  left:0px;width:100px;
+  width:100px;
   flex-flow:column;
   background:white;
   justify-content: space-between;
   padding: 2rem;
   height: calc(100vh - 4rem);
 }
+
+#sidebar{left:-164px;transition:all 0.2s ease;}
+#window{width:100vw;} 
 @media only screen and (max-width: 900px) {
-  .main-title{
+   .main-title{
   margin-top:unset;}
-  header{flex-flow:wrap;}
-  .right-box{margin:auto;}
-  .left-box{margin:auto;}
-  header{height:auto;}
   .footer-text{font-size:0.6rem;}
 }
-footer{
-  position:relative;
-  display:flex;
-  flex-flow:row;
-  justify-content:center;
-  bottom:0px;
-  left:0px;
-  width:calc(100vw - 4rem);
-  height:50px;
-  padding-right:2rem;padding-left:2rem;}
-
 
 </style>
