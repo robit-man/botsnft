@@ -100,6 +100,8 @@
 		text-align: center;
 		padding: 0rem;
 		margin: 0 auto;
+    max-width:100vw;
+    overflow-x:hidden;
     
 	}
   .router-window{
@@ -150,7 +152,7 @@ button{margin:1rem;}
   justify-content: space-between;
   padding: 2rem;
   height: calc(100vh - 4rem);
-}  .hero > h1{margin:auto;font-size:20rem;}
+}
 
 
 #sidebar{left:-164px;transition:all 0.2s ease;}
@@ -159,7 +161,6 @@ button{margin:1rem;}
    .main-title{
   margin-top:unset;}
   .footer-text{font-size:0.6rem;}
-  .hero > h1{margin:auto;font-size:7rem;}
 }
 
 </style>
