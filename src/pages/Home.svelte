@@ -42,7 +42,7 @@ var metadata = {
 <div class="wrapper ">
 <div class="escher">
   <div class="hero " id="hero">
-    <h1 style="margin:auto;font-size:20rem;max-width:calc(100vw - 250px);position:relative;text-align:center;z-index:2;color:white;line-height:1;padding:2rem;mix-blend-mode:normal;" >thi<b style="animation: flash3 2s ease alternate infinite;">s</b> is <b style="animation: flash3 4s ease alternate infinite;">a</b>n nf<b style="animation: flash3 5s ease alternate infinite;">t</b></h1>
+    <h1 style="max-width:calc(100vw - 250px);position:relative;text-align:center;z-index:2;color:white;line-height:1;padding:2rem;mix-blend-mode:normal;" >thi<b style="animation: flash3 2s ease alternate infinite;">s</b> is <b style="animation: flash3 4s ease alternate infinite;">a</b>n nf<b style="animation: flash3 5s ease alternate infinite;">t</b></h1>
    
   </div>
 </div>
