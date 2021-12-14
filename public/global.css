@@ -220,11 +220,12 @@ input:disabled {
 	padding:2rem;
 	border-left:1px dotted black;
 	border-top:4px solid black;
-	background-image:linear-gradient(-45deg, transparent 0%, transparent calc(100% - 2rem + 1px), black calc(100% - 2rem), black calc(100% - 2rem + 1px), transparent 100%);
+	margin-bottom:2rem;
+	background-image:linear-gradient(-45deg, transparent 0%, transparent calc(100% - 2rem), black calc(100% - 2rem), black 100%);
 	clip-path: polygon(2rem 0, 100% 0, 100% 100%, 0 100%, 0 2rem);
 }
 .image-box{
-	box-shadow:1rem 1rem black;border-radius:4px;margin:2rem 0rem;
+	box-shadow:1rem 1rem black;border-radius:4px;margin:auto;
 }
 .area{background:white;padding:2rem 2rem ;}
 button {

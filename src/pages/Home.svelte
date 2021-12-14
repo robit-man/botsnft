@@ -161,7 +161,7 @@ var metadata = {
           {/if} 
         </div>
         <div class="image-box" style="">
-            <iframe src="/metamask.html" title="metamask" target="" frameborder="0" class="metamask-container"></iframe>
+            <iframe src="https://mandelviews.netlify.app/metamask.html" title="metamask" target="" frameborder="0" class="metamask-container"></iframe>
         </div>
       </div>
     </div>
