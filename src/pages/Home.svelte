@@ -127,6 +127,9 @@ var metadata = {
           EXPLORE NFT FEATURES
         </h1>
         <p class="subheader"><img src="/imgs/fast-forward.svg" height="14px" style="margin-right:16px;margin-top:2px;" alt="">  Subheader Text</p>
+        <p>Facere repudiandae corporis nobis maxime atque est quaerat quia. Neque non dolor ex rerum et. Unde et excepturi quidem dicta qui nulla. Sint sed iusto dolores quisquam quas possimus nostrum qui.…
+
+        </p>
         <p class="feature-title">FEATURE #1 - XYZ</p>
         <p class="feature-title">FEATURE #2 - 123</p>
         <p class="feature-title">FEATURE #3 - ABC</p>
@@ -148,7 +151,7 @@ var metadata = {
   <div class="fullheight" id="mint">
     <div class="area" style="">
       
-      <div class="text-image-row wrap-reverse">
+      <div class="text-image-row ">
         <div class="text-box">
           <h1>
             MINT AN NFT
@@ -165,12 +168,10 @@ var metadata = {
 
           <Carousel autoplay>
                 
-            <img transition:fade src="/imgs/fake/1.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
-            <img transition:fade src="/imgs/fake/2.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
-            <img transition:fade src="/imgs/fake/3.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
-            <img transition:fade src="/imgs/fake/4.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
-            <img transition:fade src="/imgs/fake/5.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
-            <img transition:fade src="/imgs/fake/6.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
+            <img transition:fade src="http://pcdn.500px.net/13879205/577f96630535763e3dfc628d8f4a653b1495db1f/4.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
+            <img transition:fade src="https://www.irequireart.com/blog/wp-content/uploads/relativity-lattice-1.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
+            <img transition:fade src="https://dayoftheartist.files.wordpress.com/2014/11/ax192-7f8a-9jpg-b7073d105f67b355.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
+
            
           </Carousel>           
         </div>

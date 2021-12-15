@@ -102,9 +102,11 @@ p{
 .subheader{
 	display:flex;flex-flow:row;
     font-size: 1rem!important;
+	line-height:4rem;
     font-weight: 600!important;
-    text-transform: uppeimagercase!important;
+    text-transform: uppercase!important;
 }
+.subheader > img{margin-right:16px;margin-top:25px;}
 #gallery{padding:10px;width:calc(100% - 20px)!important;}
 #gallery > .column > img{
 	transition:all 0.2s ease;
@@ -247,7 +249,7 @@ input:disabled {
 	max-width:512px;
 }
 .sc-carousel-dot__dot{background-color:#9100ff!important;}
-.area{background:#f1f1f1;padding:2rem 2rem ;min-height: 100vh;}
+.area{background:#f1f1f1;padding:2rem 2rem ;}
 button {
 	color:black;
 	border:2px solid transparent;
@@ -279,4 +281,8 @@ display:flex;flex-flow:column;justify-content: center;}
 		font-weight: 700;
 		color:#000000;}
 	
+.sc-carousel__carousel-container{
+	margin:1rem;
+	max-width:80vw;
+}
   }
