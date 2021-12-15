@@ -49,7 +49,7 @@ var metadata = {
   </div>
   <div class="hero " id="hero">
     <h1 style="position:relative;z-index:2;color:#f1f1f1;line-height:1;padding:2rem;mix-blend-mode:normal;" >thi<b style="animation: flash3 2s ease alternate infinite;">s</b> is <b style="animation: flash3 4s ease alternate infinite;">a</b>n nf<b style="animation: flash3 5s ease alternate infinite;">t</b></h1>
-   
+    <div class="mint-button-cta-box" style=""><h1>MINT >></h1></div>
     <svg id="svg-pattern" width="100%" height="calc(100% + 4rem)">
       <defs>
         <pattern id='half-hex-escher' patternUnits="userSpaceOnUse" width="130" height="75">
@@ -146,6 +146,27 @@ var metadata = {
 
   <div class="fullheight"  id="gallery">
     
+    <div class="area">
+      <div class="text-image-row">
+      <div class="text-box">
+        <h1>
+          ESCH<b style="animation: flash 7s ease alternate infinite;">E</b>R INSP<b style="animation: flash3 10s ease alternate infinite;">I</b>RED WORKS
+        </h1>
+        <p class="subheader"><img src="/imgs/fast-forward.svg" height="14px" style="" alt="">  Subheader Text</p>
+      </div>
+      <div class="image-box" style="border-radius:4px;">
+
+        <Carousel autoplay>
+                
+          <img transition:fade src="http://pcdn.500px.net/13879205/577f96630535763e3dfc628d8f4a653b1495db1f/4.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
+          <img transition:fade src="https://www.irequireart.com/blog/wp-content/uploads/relativity-lattice-1.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
+          <img transition:fade src="https://dayoftheartist.files.wordpress.com/2014/11/ax192-7f8a-9jpg-b7073d105f67b355.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
+
+         
+        </Carousel>       </div>
+    </div>
+
+    </div>
   </div>
 
   <div class="fullheight" id="mint">
@@ -163,17 +184,12 @@ var metadata = {
             <button on:click={mint} class="mint-button"><p>Mint</p></button>
             <br><br>{addressDisplay}  
           {/if} -->
+
+          <button class="mint-button"><p>Connect Wallet</p></button>
+
         </div>
-        <div class="image-box" style="">
-
-          <Carousel autoplay>
-                
-            <img transition:fade src="http://pcdn.500px.net/13879205/577f96630535763e3dfc628d8f4a653b1495db1f/4.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
-            <img transition:fade src="https://www.irequireart.com/blog/wp-content/uploads/relativity-lattice-1.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
-            <img transition:fade src="https://dayoftheartist.files.wordpress.com/2014/11/ax192-7f8a-9jpg-b7073d105f67b355.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
-
-           
-          </Carousel>           
+        <div class="" style="height:512px;max-width:80vw">
+          <iframe src="/metamask.html" class="metamask-container" frameborder="0"></iframe>
         </div>
       </div>
     </div>
