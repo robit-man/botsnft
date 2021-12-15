@@ -35,12 +35,6 @@ body {
     font-family: 'Source Code Pro', monospace;
 	font-weight:200;
 }
-b{    font-family: "UNI";
-}
-p{
-	line-height: 1.2;
-    font-family: 'Source Code Pro', monospace;
-}
 @keyframes flash{
 	0%{filter:invert(0);}
 
@@ -97,7 +91,8 @@ p{
 	
 	100%{filter:invert(0);}
 }
-  .hero > h1{margin:auto;font-size:20rem;text-align:center;}
+.hero > h1{font-family: 'UNI', sans-serif;margin:auto;font-size:20rem;text-align:center;}
+.hero > h1 > b{font-family: 'UNI', sans-serif;}
 
 .subheader{
 	display:flex;flex-flow:row;
@@ -174,17 +169,24 @@ p{
 .mint-button:hover > p {color:#f1f1f1;}
 .light{color:#a1a1a1;}
 h2, h3, h4, h5, h6{
-	font-family: 'UNI', sans-serif;
+	font-family: 'UNI2', sans-serif;
 	font-weight: bold;
 	color:#000000;
 }
 h1{font-size:5rem;
 	margin:unset;
 	line-height:1;
-	font-family: 'UNI', sans-serif;
+	font-family: 'UNI2', sans-serif;
 	font-weight: 700;
     text-shadow:5px 5px #3700ff55, 4px 4px #5100ff55, 3px 3px #7600ff55, 2px 2px #e100ff55, 1px 1px #ff00d455;
-	color:#000000;}
+	color:transparent;}
+	
+b{    font-family: "UNI2";
+}
+p{
+	line-height: 1.2;
+    font-family: 'Source Code Pro', monospace;
+}
 a {
 	color: inherit;
 	text-decoration: none;
@@ -225,7 +227,7 @@ input:disabled {
 	border-left:1px dotted black;
 	border-top:2px solid black;
 	margin-bottom:2rem;
-	background-image:linear-gradient(-45deg, #9100ff 0%,#9100ff 1rem,transparent 1rem, transparent calc(100% - 1.35rem), black calc(100% - 1.35rem), black 100%);
+	background-image:linear-gradient(-45deg, #9100ff 0%,#9100ff 1rem,transparent 1rem, transparent calc(100% - 1rem), black calc(100% - 1rem), black 100%);
 	clip-path: polygon(1rem 0, 100% 0, 100% 100%, 0 100%, 0 1rem);
 }
 .text-box2{
@@ -234,7 +236,7 @@ input:disabled {
 	border-right:1px dotted black;
 	border-bottom:2px solid black;
 	margin-bottom:2rem;
-	background-image:linear-gradient(135deg, #9100ff 0%,#9100ff 1rem,transparent 1rem, transparent calc(100% - 1.35rem), black calc(100% - 1.35rem), black 100%);
+	background-image:linear-gradient(135deg, #9100ff 0%,#9100ff 1rem,transparent 1rem, transparent calc(100% - 1rem), black calc(100% - 1rem), black 100%);
 	clip-path: polygon(100% 0, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0 100%, 0 0);
 }
 .text-box > h1{

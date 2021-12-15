@@ -92,7 +92,7 @@ var metadata = {
         <p class="subheader"><img src="/imgs/fast-forward.svg" height="14px" style="" alt="">  Subheader Text</p>
       </div>
       <div class="image-box" style="border-radius:4px;">
-        <div style="border-radius:4px;background-image:url(https://i.pinimg.com/originals/70/2e/db/702edbf5abbb39c6788b00ca18beb074.gif);height:400px;width:256px;background-size:cover;" src="" alt=""></div>
+        <div style="border-radius:4px;background-image:url(https://i.pinimg.com/originals/70/2e/db/702edbf5abbb39c6788b00ca18beb074.gif);height:400px;width:256px;background-size:cover;mix-blend-mode: exclusion;" src="" alt=""></div>
       </div>
     </div>
 
@@ -126,7 +126,7 @@ var metadata = {
         <h1>
           EXPLORE NFT FEATURES
         </h1>
-        <p class="subheader"><img src="/imgs/fast-forward.svg" height="14px" style="margin-right:16px;margin-top:2px;" alt="">  Subheader Text</p>
+        <p class="subheader"><img src="/imgs/fast-forward.svg" height="14px"  alt="">  Subheader Text</p>
         <p>Facere repudiandae corporis nobis maxime atque est quaerat quia. Neque non dolor ex rerum et. Unde et excepturi quidem dicta qui nulla. Sint sed iusto dolores quisquam quas possimus nostrum qui.…
 
         </p>
