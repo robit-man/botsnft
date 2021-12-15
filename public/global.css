@@ -137,7 +137,7 @@ body {
 .row > a{display: flex;
 	flex-flow: column;
 	justify-content: center;}
-.row:hover a > img{transform:scale(0.9);}
+.row a:hover > img{transform:scale(0.9);}
 .subheader > img{transition:all 0.2s ease;margin-left:16px;margin-right:16px;margin-top:25px;}
 .subheader:hover > img{margin-right:8px;padding-left:8px;}
 .subheader:hover{color:#9100ff;}
