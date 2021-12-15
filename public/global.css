@@ -96,6 +96,7 @@ body {
 .mint-button-cta-box > h1{background-image:linear-gradient(45deg, #00015a, #ff00aa);-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;font-family: 'UNI', sans-serif;text-align:right;color:black;text-shadow:unset;font-size:5rem!important;}
 .mint-button-cta-box{
+    mix-blend-mode: lighten;
 	z-index:5;
     position: absolute;
     top: 4rem;
@@ -105,7 +106,7 @@ body {
     flex-flow: row;
     justify-content: center;
 	background:#f1f1f1;
-	padding: 3rem 0rem;
+	padding: 2rem 0rem;
 width: 100vw;}
 .subheader{
 	display:flex;flex-flow:row;
@@ -237,20 +238,14 @@ input:disabled {
 .text-box{
 	text-align:left;max-width:512px;
 	padding:2rem;
-	border-left:1px dotted black;
-	border-top:2px solid black;
 	margin-bottom:2rem;
 	background-image:linear-gradient(-45deg, #9100ff 0%,#9100ff 1rem,transparent 1rem, transparent calc(100% - 1rem), black calc(100% - 1rem), black 100%);
-	clip-path: polygon(1rem 0, 100% 0, 100% 100%, 0 100%, 0 1rem);
 }
 .text-box2{
 	text-align:left;max-width:512px;
 	padding:2rem;
-	border-right:1px dotted black;
-	border-bottom:2px solid black;
 	margin-bottom:2rem;
 	background-image:linear-gradient(135deg, #9100ff 0%,#9100ff 1rem,transparent 1rem, transparent calc(100% - 1rem), black calc(100% - 1rem), black 100%);
-	clip-path: polygon(100% 0, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0 100%, 0 0);
 }
 .text-box > h1{
     line-height: 5rem;
@@ -265,7 +260,6 @@ input:disabled {
 }
 .sc-carousel__carousel-container{
 	margin:1rem;
-	max-width:512px;
 }
 .sc-carousel-dot__dot{background-color:#9100ff!important;}
 .area{background:#f1f1f1;padding:2rem 2rem ;}
@@ -293,7 +287,7 @@ display:flex;flex-flow:column;justify-content: center;}
 	background:#f1f1f1;width:100%;left:164px;position:absolute;height: 100vh;
 	overflow-y:auto;overflow-x:hidden;}
 @media only screen and (max-width: 900px) {
-	.hero > h1{margin:auto;font-size:7rem;text-align:right;padding-top:unset;}
+	.hero > h1{margin:auto;font-size:5rem;text-align:right;padding-top:unset;transform:rotate(30deg);}
 	#sidebar{justify-content: space-around;}
 	h1{font-size:3rem;
 		}
@@ -307,7 +301,7 @@ display:flex;flex-flow:column;justify-content: center;}
 			flex-flow: row;
 			justify-content: center;
 			background:#f1f1f1;
-			padding: 2rem 0rem;
+			padding: 1rem 0rem;
 		width: 100vw;}
 .sc-carousel__carousel-container{
 	margin:1rem;
