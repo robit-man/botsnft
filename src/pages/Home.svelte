@@ -122,7 +122,7 @@ var metadata = {
           </div>
         </div>
 
-      <div class="text-box">
+      <div class="text-box2">
         <h1>
           EXPLORE NFT FEATURES
         </h1>
