@@ -82,7 +82,7 @@ export async function initProvider(app, reconnect = false) {
     web3Loaded.set(1);
 }
 
-export async function mintPepe() {
+export async function mintHex() {
     const p = get(provider);
     const nftContract = get(contract)
     const signer = p.getSigner();

@@ -6,14 +6,14 @@
     import Four from "./pages/Four.svelte";    
     import Gallery from "./pages/Gallery.svelte";
     export let url = '';
-
+    import Carousel from 'svelte-carousel';
     import { address, contract, provider, nfts, balances } from './store';
     import { setContext } from 'svelte';
     import { writable } from 'svelte/store';
     import { Audio, Video } from 'svelte-audio-video';
     import { 
         initProvider,
-        mintPepe,
+        mintHex,
     } from './utils.js';  
     
 
@@ -49,7 +49,7 @@
     }    
 
     async function mint(event) {
-      await mintPepe(contract, provider);
+      await mintHex(contract, provider);
     }
     const app = writable({});
     //export const innerHeight = writable(1000)
@@ -162,8 +162,8 @@ button{margin:1rem;}
   flex-flow:column;
   background:#f1f1f1;
   justify-content: space-between;
-  padding: 2rem;
-  height: calc(100vh - 4rem);
+  padding: 4rem 2rem;
+  height: calc(100vh - 8rem);
 }
 
 

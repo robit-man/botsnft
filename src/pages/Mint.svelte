@@ -5,7 +5,7 @@
     import { onMount, getContext} from 'svelte';
     import { 
         initProvider,
-        mintPepe,
+        mintHex,
     } from '../utils.js';
 
     const app = getContext('app');
@@ -23,7 +23,7 @@
     }    
 
     async function mint(event) {
-      await mintPepe(contract, provider);
+      await mintHex(contract, provider);
     }
 </script>
 
