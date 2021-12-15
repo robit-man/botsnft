@@ -48,7 +48,7 @@ var metadata = {
     <img src="/imgs/focus.svg" width="32px" height="32px" style="opacity:0.9;animation: flash4 3s ease alternate infinite;mix-blend-mode:difference;position:fixed;bottom:1rem;left:1rem;" alt="">
   </div>
   <div class="hero " id="hero">
-    <h1 style="position:relative;text-align:center;z-index:2;color:#f1f1f1;line-height:1;padding:2rem;mix-blend-mode:normal;" >thi<b style="animation: flash3 2s ease alternate infinite;">s</b> is <b style="animation: flash3 4s ease alternate infinite;">a</b>n nf<b style="animation: flash3 5s ease alternate infinite;">t</b></h1>
+    <h1 style="position:relative;z-index:2;color:#f1f1f1;line-height:1;padding:2rem;mix-blend-mode:normal;" >thi<b style="animation: flash3 2s ease alternate infinite;">s</b> is <b style="animation: flash3 4s ease alternate infinite;">a</b>n nf<b style="animation: flash3 5s ease alternate infinite;">t</b></h1>
    
     <svg id="svg-pattern" width="100%" height="calc(100% + 4rem)">
       <defs>
@@ -89,7 +89,7 @@ var metadata = {
         <h1>
           ESCH<b style="animation: flash 7s ease alternate infinite;">E</b>R INSP<b style="animation: flash3 10s ease alternate infinite;">I</b>RED WORKS
         </h1>
-        <p class="subheader"><img src="/imgs/fast-forward.svg" height="14px" style="margin-right:16px;margin-top:2px;" alt="">  Subheader Text</p>
+        <p class="subheader"><img src="/imgs/fast-forward.svg" height="14px" style="" alt="">  Subheader Text</p>
       </div>
       <div class="image-box" style="border-radius:4px;">
         <div style="border-radius:4px;background-image:url(https://i.pinimg.com/originals/70/2e/db/702edbf5abbb39c6788b00ca18beb074.gif);height:400px;width:256px;background-size:cover;" src="" alt=""></div>
@@ -156,7 +156,7 @@ var metadata = {
           <h1>
             MINT AN NFT
           </h1>
-          <p class="subheader"><img src="/imgs/fast-forward.svg" height="14px" style="margin-right:16px;margin-top:2px;" alt="">  Subheader Text</p>
+          <p class="subheader"><img src="/imgs/fast-forward.svg" height="14px" style="" alt="">  Subheader Text</p>
           <!--{#if !$address}
           <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
           {:else}
