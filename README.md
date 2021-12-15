@@ -1,1 +1,1 @@
-
+Generic NFT Minting Site
