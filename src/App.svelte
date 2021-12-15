@@ -59,6 +59,7 @@
 </script>
 
 <div class="main">
+  
     <Audio controls={false}>
         <source
           src="/"
@@ -74,13 +75,13 @@
           </div>
 
           <nav>
-             <!--<Link to="mint"><p on:click={toggle} style="font-size:1.8rem;margin:0rem 1rem;">Mint</p></Link>
-            <Link to="gallery"><p on:click={toggle} style="font-size:1.8rem;margin:0rem 1rem;">Gallery</p></Link>
-            <Link to="roadmap"><p on:click={toggle} style="font-size:1.8rem;margin:0rem 1rem;">Roadmap</p></Link>
+             <!--<Link to="mint"><p on:click={toggle} class="nav-text" >Mint</p></Link>
+            <Link to="gallery"><p on:click={toggle} class="nav-text" >Gallery</p></Link>
+            <Link to="roadmap"><p on:click={toggle} class="nav-text" >Roadmap</p></Link>
            -->
-            <a href="#about"><p on:click={toggle} style="font-size:1.8rem;margin:0rem 1rem;">About</p></a>
-            <a href="#mint"><p on:click={toggle} style="font-size:1.8rem;margin:0rem 1rem;">Mint</p></a>
-            <a href="#roadmap"><p on:click={toggle} style="font-size:1.8rem;margin:0rem 1rem;">Roadmap</p></a>
+            <a href="#about"><p on:click={toggle} class="nav-text" >About</p></a>
+            <a href="#mint"><p on:click={toggle} class="nav-text" >Mint</p></a>
+            <a href="#roadmap"><p on:click={toggle} class="nav-text" >Roadmap</p></a>
           </nav>
 
           <div class="right-box">
@@ -119,12 +120,6 @@
   }
   
 
-.color1 { fill: #ccc; }
-
-.color2 { fill: #ddd; }
-
-.color3 { fill: #eee; }
-
 .mint-button{
 	margin:auto;
   width:50px;
@@ -145,7 +140,7 @@
 .mint-button:hover{
   background-image:url('/imgs/wallet(2).svg');
   background-color:transparent;  
-  border:0px solid white;
+  border:0px solid #f1f1f1;
 
 }
   
@@ -165,7 +160,7 @@ button{margin:1rem;}
   display:flex;
   width:100px;
   flex-flow:column;
-  background:white;
+  background:#f1f1f1;
   justify-content: space-between;
   padding: 2rem;
   height: calc(100vh - 4rem);

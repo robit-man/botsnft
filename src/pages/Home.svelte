@@ -4,6 +4,7 @@ import { slide, fade } from 'svelte/transition';
 import { address, contract, provider, nfts, balances } from '../store';
 import { Swiper, SwiperSlide } from 'swiper/svelte';
 import "swiper/css/pagination"
+import Carousel from 'svelte-carousel'
 
 
 
@@ -40,20 +41,20 @@ var metadata = {
 
 <div class="wrapper">
 <div class="escher">
+  <div class="backdrop">
+    <img src="/imgs/focus.svg" width="32px" height="32px" style="opacity:0.9;animation: flash 2s ease alternate infinite;mix-blend-mode:difference;position:fixed;top:1rem;right:1rem;" alt="">
+    <img src="/imgs/focus.svg" width="32px" height="32px" style="opacity:0.9;animation: flash2 4s ease alternate infinite;mix-blend-mode:difference;position:fixed;bottom:1rem;right:1rem;" alt="">
+    <!--<img src="/imgs/focus.svg" width="32px" height="32px" style="opacity:0.9;animation: flash3 2s ease alternate infinite;mix-blend-mode:difference;position:fixed;top:1rem;left:1rem;" alt="">-->
+    <img src="/imgs/focus.svg" width="32px" height="32px" style="opacity:0.9;animation: flash4 3s ease alternate infinite;mix-blend-mode:difference;position:fixed;bottom:1rem;left:1rem;" alt="">
+  </div>
   <div class="hero " id="hero">
-    <h1 style="position:relative;text-align:center;z-index:2;color:white;line-height:1;padding:2rem;mix-blend-mode:normal;" >thi<b style="animation: flash3 2s ease alternate infinite;">s</b> is <b style="animation: flash3 4s ease alternate infinite;">a</b>n nf<b style="animation: flash3 5s ease alternate infinite;">t</b></h1>
+    <h1 style="position:relative;text-align:center;z-index:2;color:#f1f1f1;line-height:1;padding:2rem;mix-blend-mode:normal;" >thi<b style="animation: flash3 2s ease alternate infinite;">s</b> is <b style="animation: flash3 4s ease alternate infinite;">a</b>n nf<b style="animation: flash3 5s ease alternate infinite;">t</b></h1>
    
-    <div class="backdrop">
-      <img src="/imgs/focus.svg" width="32px" height="32px" style="animation: flash 2s ease alternate infinite;mix-blend-mode:difference;position:absolute;top:1rem;right:1rem;" alt="">
-      <img src="/imgs/focus.svg" width="32px" height="32px" style="animation: flash2 4s ease alternate infinite;mix-blend-mode:difference;position:absolute;bottom:1rem;right:1rem;" alt="">
-      <!--<img src="/imgs/focus.svg" width="32px" height="32px" style="animation: flash3 2s ease alternate infinite;mix-blend-mode:difference;position:absolute;top:1rem;left:1rem;" alt="">-->
-      <img src="/imgs/focus.svg" width="32px" height="32px" style="animation: flash4 3s ease alternate infinite;mix-blend-mode:difference;position:absolute;bottom:1rem;left:1rem;" alt="">
-    </div>
     <svg id="svg-pattern" width="100%" height="calc(100% + 4rem)">
       <defs>
         <pattern id='half-hex-escher' patternUnits="userSpaceOnUse" width="130" height="75">
           <symbol id='half-hex'>
-            <path d="M173.2,150 v200 l86.6,-50 v-100 z" stroke="#fff" stroke-width='2' />
+            <path d="M173.2,150 v200 l86.6,-50 v-100 z" stroke="#f1f1f1" stroke-width='2' />
           </symbol>
           <symbol id='half-hex-flip'>
             <use xlink:href="#half-hex" transform='rotate(180 173.2 250)' />
@@ -80,17 +81,17 @@ var metadata = {
     
   </div>
 </div>
-  <div class="" id="about">
+  <div class="fullheight" id="about">
 
     <div class="area">
       <div class="text-image-row">
       <div class="text-box">
         <h1>
-          LEARN ABOUT NFT's
+          ESCH<b style="animation: flash 7s ease alternate infinite;">E</b>R INSP<b style="animation: flash3 10s ease alternate infinite;">I</b>RED WORKS
         </h1>
         <p class="subheader"><img src="/imgs/fast-forward.svg" height="14px" style="margin-right:16px;margin-top:2px;" alt="">  Subheader Text</p>
       </div>
-      <div class="image-box" style="box-shadow:1rem 1rem black;border-radius:4px;">
+      <div class="image-box" style="border-radius:4px;">
         <div style="border-radius:4px;background-image:url(https://i.pinimg.com/originals/70/2e/db/702edbf5abbb39c6788b00ca18beb074.gif);height:400px;width:256px;background-size:cover;" src="" alt=""></div>
       </div>
     </div>
@@ -99,21 +100,21 @@ var metadata = {
     
 
 
-    <div class="area" style="" >
+    <div class="area" style="" id="roadmap" >
       <div class="text-image-row wrap-reverse">
 
-        <div class="image-box" style="box-shadow:1rem 1rem black;max-height:256px;border-radius:256px;">
-          <div style="border-radius:256px;filter:invert(1);max-height:256px;width:256px;background-size:cover;" src="" alt="">
+        <div class="image-box" style="max-width: 80vw;border-radius:512px;">
+          <div style="border-radius:512px;filter:invert(1);max-width: 80vw;width:512px;background-size:cover;" src="" alt="">
             <svg version="1.1" id="L7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-              <path fill="#fff" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3
+              <path fill="#f1f1f1" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3
                c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z">
                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" from="0 50 50" to="360 50 50" repeatCount="indefinite"></animateTransform>
                </path>
-              <path fill="#fff" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7
+              <path fill="#f1f1f1" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7
                c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z">
                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50" to="-360 50 50" repeatCount="indefinite"></animateTransform>
                </path>
-              <path fill="#fff" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5
+              <path fill="#f1f1f1" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5
                L82,35.7z">
                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" from="0 50 50" to="360 50 50" repeatCount="indefinite"></animateTransform>
                </path>
@@ -126,11 +127,11 @@ var metadata = {
           EXPLORE NFT FEATURES
         </h1>
         <p class="subheader"><img src="/imgs/fast-forward.svg" height="14px" style="margin-right:16px;margin-top:2px;" alt="">  Subheader Text</p>
-        <p><b>FEATURE #1</b> XYZ</p>
-        <p><b>FEATURE #2</b> 123</p>
-        <p><b>FEATURE #3</b> ABC</p>
-        <p><b>FEATURE #4</b> #&$</p>
-        <p><b>FEATURE #5</b> |/\</p>
+        <p class="feature-title">FEATURE #1 - XYZ</p>
+        <p class="feature-title">FEATURE #2 - 123</p>
+        <p class="feature-title">FEATURE #3 - ABC</p>
+        <p class="feature-title">FEATURE #4 - #&$</p>
+        <p class="feature-title">FEATURE #5 - |/\</p>
       </div>
     </div>
 
@@ -140,11 +141,11 @@ var metadata = {
 
   </div>
 
-  <div class="" style="padding:8rem 4rem; width:calc(100% - 8rem)!important;" id="gallery">
+  <div class="fullheight"  id="gallery">
     
   </div>
 
-  <div class="" id="mint">
+  <div class="fullheight" id="mint">
     <div class="area" style="">
       
       <div class="text-image-row wrap-reverse">
@@ -153,15 +154,25 @@ var metadata = {
             MINT AN NFT
           </h1>
           <p class="subheader"><img src="/imgs/fast-forward.svg" height="14px" style="margin-right:16px;margin-top:2px;" alt="">  Subheader Text</p>
-          {#if !$address}
+          <!--{#if !$address}
           <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
           {:else}
             <button on:click={mint} class="mint-button"><p>Mint</p></button>
             <br><br>{addressDisplay}  
-          {/if} 
+          {/if} -->
         </div>
         <div class="image-box" style="">
-            <iframe src="https://mandelviews.netlify.app/metamask.html" title="metamask" target="" frameborder="0" class="metamask-container"></iframe>
+
+          <Carousel autoplay>
+                
+            <img transition:fade src="/imgs/fake/1.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
+            <img transition:fade src="/imgs/fake/2.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
+            <img transition:fade src="/imgs/fake/3.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
+            <img transition:fade src="/imgs/fake/4.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
+            <img transition:fade src="/imgs/fake/5.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
+            <img transition:fade src="/imgs/fake/6.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
+           
+          </Carousel>           
         </div>
       </div>
     </div>
@@ -221,8 +232,8 @@ var metadata = {
     top: 0px;
     right: 0px;}
 
-.hero{width:100%;height:100%;display:flex;flex-flow:column;justify-content: center; overflow:hidden;   backdrop-filter:  invert(0%)brightness(0.5);transition:all 0.2s ease;
+.hero{background-image:linear-gradient(45deg, #00015a, #ff00aa);width:100%;height:100%;display:flex;flex-flow:column;justify-content: center; overflow:hidden;   backdrop-filter:  invert(0%)brightness(0.5);transition:all 0.2s ease;
 }
-#svg-pattern{position:absolute;top:0px;left:0px;display:block;}
+#svg-pattern{opacity:0.5;position:absolute;top:0px;left:0px;display:block;}
 .hero:hover{ backdrop-filter: invert(100%)brightness(1);cursor:crosshair;}
 </style>
