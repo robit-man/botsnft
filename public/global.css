@@ -132,7 +132,9 @@ body {
 .image-box:hover > .perspective-hover-2{
 	transform:scale(1.2)rotateY(-5deg)rotateX(5deg)rotateZ(-5deg)
 }
-.row{display:flex;flex-flow:row;justify-content:space-evenly;}
+.row{display:flex;flex-flow:wrap;justify-content:space-between;}
+.row a > img{transition:all 0.2s ease;}
+.row:hover a > img{transform:scale(0.9);}
 .subheader > img{transition:all 0.2s ease;margin-left:16px;margin-right:16px;margin-top:25px;}
 .subheader:hover > img{margin-right:8px;padding-left:8px;}
 .subheader:hover{color:#9100ff;}

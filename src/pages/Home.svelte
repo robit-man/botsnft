@@ -95,7 +95,7 @@ import "aframe-svelte"
         Hexelz NFT is about complex geometries and art. It’s non generative, drawn piece by piece, inspired by the imaginative works of M C Escher. All art is based on a triangulation grid. Hexelz NFTs shows a colorful approach with visual illusions tricks. Called impossible objects, the art is about geometry, tessellations, and mathematics.        <p></p>
       </div>
       <div class="image-box" style="border-radius:4px;">
-        <div class="perspective-hover-1" style="border-radius:4px;background-size:cover;" src="" alt=""><img style="width:100%;height:100%;" src="/imgs/Hexels_39.png" alt=""></div>
+        <div class="perspective-hover-1" style="border-radius:4px;background-size:cover;" src="" alt=""><img style="width:100%;height:100%;pointer-events: none;" src="/imgs/Hexels_39.png" alt=""></div>
       </div>
     </div>
 
@@ -107,20 +107,21 @@ import "aframe-svelte"
       <div class="text-image-row wrap-reverse">
 
         <div class="image-box" style="border-radius:4px;">
-          <div class="perspective-hover-2" style="border-radius:4px;background-size:cover;" src="" alt=""><img style="width:100%;height:100%;" src="/imgs/Hexels_20.png" alt=""></div>
+          <div class="perspective-hover-2" style="border-radius:4px;background-size:cover;" src="" alt=""><img style="width:100%;height:100%;pointer-events: none;" src="/imgs/Hexels_20.png" alt=""></div>
         </div>
 
       <div class="text-box2">
         <h1>
           CON<b style="animation: flash 7s ease alternate infinite;">N</b>ECT WI<b style="animation: flash2 10s ease alternate infinite;">T</b>H THE C<b style="animation: flash3 7s ease alternate infinite;">U</b>RATORS
         </h1>
-        <p class="subheader"> Subheader Text >></p>
+        <p class="subheader">>> LEARN MORE</p>
           <p>
             Learn More about the artist, and follow for ongoing collaborations and projects!
         </p>
         <div class="row">
-        <a href="https://twitter.com/HexelzNFT"><img width="128px" src="/imgs/twitter.png" alt=""></a>
-        <a href="https://t.co/qF2LhfTU8g"><img width="128px" src="/imgs/discord.png" alt=""></a>
+        <a href="https://twitter.com/HexelzNFT"><img width="128px" style="opacity:0.7" src="/imgs/twitter.png" alt=""></a>
+        <a href="https://t.co/qF2LhfTU8g"><img width="128px" style="opacity:0.7" src="/imgs/discord.png" alt=""></a>
+        <a href="mailto:Hexelz@protonmail.com"><img height="100px" style="opacity:0.7" src="/imgs/email.png" alt=""></a>
       </div>
       </div>
     </div>
@@ -157,7 +158,7 @@ import "aframe-svelte"
           {/if}
 
         </div>
-        <div class="" style="">
+        <div class="mask" style="">
           <Mask />
   
     
@@ -176,6 +177,7 @@ import "aframe-svelte"
   max-width:512px;
 }
 .mask{display: flex;
+  width:512px;height:512px;
   flex-flow: wrap;    overflow:visible!important;
   justify-content: center;
 }
@@ -190,7 +192,7 @@ import "aframe-svelte"
 .mask{display: flex;
   flex-flow: wrap;
   justify-content: center;
-height:100vw;width:100vw;}
+height:80vw;width:80vw;}
 }
 
 
