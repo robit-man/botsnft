@@ -49,7 +49,7 @@ var metadata = {
   </div>
   <div class="hero " id="hero">
     <h1 style="position:relative;z-index:2;color:#f1f1f1;line-height:1;padding:2rem;mix-blend-mode:normal;" >H<b style="animation: flash3 2s ease alternate infinite;">E</b>X<b style="animation: flash3 4s ease alternate infinite;">E</b>L<b style="animation: flash3 5s ease alternate infinite;">S</b></h1>
-    <a href="#mint"><div class="mint-button-cta-box" style=""><h1>MINT >></h1></div></a>
+    <a href="#mint"><div class="mint-button-cta-box" style=""><h1>MINT</h1></div></a>
     <svg id="svg-pattern" width="100%" height="calc(100% + 4rem)">
       <defs>
         <pattern id='half-hex-escher' patternUnits="userSpaceOnUse" width="130" height="75">
@@ -157,9 +157,9 @@ var metadata = {
       <div class="image-box" style="border-radius:4px;">
         <Carousel autoplay>
                 
-          <img src="http://pcdn.500px.net/13879205/577f96630535763e3dfc628d8f4a653b1495db1f/4.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
-          <img src="https://www.irequireart.com/blog/wp-content/uploads/relativity-lattice-1.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
-          <img src="https://dayoftheartist.files.wordpress.com/2014/11/ax192-7f8a-9jpg-b7073d105f67b355.jpg" style="z-index:2;position:relative;width:256px;filter:saturate(0);" alt="">
+          <img src="http://pcdn.500px.net/13879205/577f96630535763e3dfc628d8f4a653b1495db1f/4.jpg"  alt="">
+          <img src="https://www.irequireart.com/blog/wp-content/uploads/relativity-lattice-1.jpg"  alt="">
+          <img src="https://dayoftheartist.files.wordpress.com/2014/11/ax192-7f8a-9jpg-b7073d105f67b355.jpg" alt="">
 
          
         </Carousel>       
@@ -209,14 +209,15 @@ var metadata = {
 
 <style>
   
-#logo-container > svg {
+.mask > svg {
   width: 512px;
   height: 512px;
   margin:auto;
-  overflow:visible;
+  overflow:visible!important;
 }
 .mask{display: flex;
-  flex-flow: wrap;
+  flex-flow: wrap;  overflow:visible;
+
   justify-content: center;
 height:512px;width:512px;}
 
