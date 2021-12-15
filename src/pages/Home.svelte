@@ -50,7 +50,7 @@ import "aframe-svelte"
     <img src="/imgs/focus.svg" width="32px" height="32px" style="opacity:0.9;animation: flash4 3s ease alternate infinite;mix-blend-mode:difference;position:fixed;bottom:1rem;left:1rem;" alt="">
   </div>
   <div class="hero " id="hero">
-    <h1 style="position:relative;z-index:2;color:#f1f1f1;line-height:1;padding:2rem;mix-blend-mode:normal;" >H<b style="animation: flash3 2s ease alternate infinite;">E</b>X<b style="animation: flash3 4s ease alternate infinite;">E</b>L<b style="animation: flash3 5s ease alternate infinite;">Z</b></h1>
+    <h1 style="position:relative;z-index:2;color:#f1f1f1;line-height:1;padding:2rem;mix-blend-mode:normal;" >H<b style="animation: flash3 2s ease alternate infinite;">E</b><div class="mobile-break"><br></div>X<b style="animation: flash3 4s ease alternate infinite;">E</b><div class="mobile-break"><br></div>L<b style="animation: flash3 5s ease alternate infinite;">Z</b></h1>
     <a href="#mint"><div class="mint-button-cta-box" style=""><h1>MINT ▼</h1></div></a>
     <svg id="svg-pattern" width="100%" height="calc(100% + 4rem)">
       <defs>
@@ -89,14 +89,13 @@ import "aframe-svelte"
       <div class="text-image-row">
       <div class="text-box">
         <h1>
-          ESCH<b style="animation: flash 7s ease alternate infinite;">E</b>R INSP<b style="animation: flash3 10s ease alternate infinite;">I</b>RED WORKS
+          EXP<b style="animation: flash 7s ease alternate infinite;">L</b>ORING <b style="animation: flash3 10s ease alternate infinite;">C</b>OMPLEX GEOMETRIES
         </h1>
-        <p class="subheader">Subheader Text >></p>
-        Hexelz NFT is about complex geometries and art. It’s non generative, drawn piece by piece, inspired by the imaginative works of M C Escher. All art is based on a triangulation grid. Hexelz NFTs shows a colorful approach with visual illusions tricks. Called impossible objects, the art is about geometry, tessellations, mathematics.
-        <p></p>
+        <p class="subheader">>> ESCHER AND PENROSE INSPIRED</p>
+        Hexelz NFT is about complex geometries and art. It’s non generative, drawn piece by piece, inspired by the imaginative works of M C Escher. All art is based on a triangulation grid. Hexelz NFTs shows a colorful approach with visual illusions tricks. Called impossible objects, the art is about geometry, tessellations, and mathematics.        <p></p>
       </div>
       <div class="image-box" style="border-radius:4px;">
-        <div style="border-radius:4px;background-image:url(https://i.pinimg.com/originals/70/2e/db/702edbf5abbb39c6788b00ca18beb074.gif);height:400px;width:400px;background-size:cover;mix-blend-mode: exclusion;" src="" alt=""></div>
+        <div class="perspective-hover-1" style="border-radius:4px;background-size:cover;" src="" alt=""><img style="width:100%;height:100%;" src="/imgs/Hexels_39.png" alt=""></div>
       </div>
     </div>
 
@@ -107,38 +106,22 @@ import "aframe-svelte"
     <div class="area" style="" id="roadmap" >
       <div class="text-image-row wrap-reverse">
 
-        <div class="image-box" style="border-radius:512px;">
-          <div style="border-radius:512px;filter:invert(1);max-width: 400px;width:512px;background-size:cover;" src="" alt="">
-            <svg version="1.1" id="L7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-              <path fill="#f1f1f1" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3
-               c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z">
-                   <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" from="0 50 50" to="360 50 50" repeatCount="indefinite"></animateTransform>
-               </path>
-              <path fill="#f1f1f1" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7
-               c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z">
-                   <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50" to="-360 50 50" repeatCount="indefinite"></animateTransform>
-               </path>
-              <path fill="#f1f1f1" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5
-               L82,35.7z">
-                   <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" from="0 50 50" to="360 50 50" repeatCount="indefinite"></animateTransform>
-               </path>
-             </svg>
-          </div>
+        <div class="image-box" style="border-radius:4px;">
+          <div class="perspective-hover-2" style="border-radius:4px;background-size:cover;" src="" alt=""><img style="width:100%;height:100%;" src="/imgs/Hexels_20.png" alt=""></div>
         </div>
 
       <div class="text-box2">
         <h1>
-          EXPLORE NFT FEATURES
+          CON<b style="animation: flash 7s ease alternate infinite;">N</b>ECT WI<b style="animation: flash2 10s ease alternate infinite;">T</b>H THE C<b style="animation: flash3 7s ease alternate infinite;">U</b>RATORS
         </h1>
         <p class="subheader"> Subheader Text >></p>
-        <p>Facere repudiandae corporis nobis maxime atque est quaerat quia. Neque non dolor ex rerum et. Unde et excepturi quidem dicta qui nulla. Sint sed iusto dolores quisquam quas possimus nostrum qui.…
-
+          <p>
+            Learn More about the artist, and follow for ongoing collaborations and projects!
         </p>
-        <p class="feature-title">FEATURE #1 - XYZ</p>
-        <p class="feature-title">FEATURE #2 - 123</p>
-        <p class="feature-title">FEATURE #3 - ABC</p>
-        <p class="feature-title">FEATURE #4 - #&$</p>
-        <p class="feature-title">FEATURE #5 - |/\</p>
+        <div class="row">
+        <a href="https://twitter.com/HexelzNFT"><img width="128px" src="/imgs/twitter.png" alt=""></a>
+        <a href="https://t.co/qF2LhfTU8g"><img width="128px" src="/imgs/discord.png" alt=""></a>
+      </div>
       </div>
     </div>
 
@@ -163,9 +146,9 @@ import "aframe-svelte"
       <div class="text-image-row ">
         <div class="text-box2">
           <h1>
-            MINT AN NFT
+            MINT A HEXELZ
           </h1>
-          <p class="subheader">Subheader Text >></p>
+          <p class="subheader">>> CONNECT TO METAMASK</p>
         {#if !$address}
           <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
           {:else}
