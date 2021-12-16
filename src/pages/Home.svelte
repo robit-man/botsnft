@@ -177,10 +177,15 @@ import "aframe-svelte"
   overflow:visible!important;
   max-width:512px;
 }
-.mask{display: flex;
-  width:512px;height:512px;
-  flex-flow: wrap;    overflow:visible!important;
-  justify-content: center;
+.mask{   
+    display: flex;
+    width: 512px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/1280px-MetaMask_Fox.svg.png);
+    height: 512px;
+    flex-flow: wrap;
+    background-size: contain;
+    overflow: visible!important;
+    justify-content: center;
 }
 
 @media screen and (max-width:900px){
