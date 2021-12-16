@@ -147,10 +147,10 @@ import "aframe-svelte"
       <div class="text-image-row ">
         <div class="text-box2">
           <h1>
-            MINT A HEXELZ
+            MINT HEXELZ
           </h1>
           <p class="subheader">>> 0.55 ETH</p>
-          <p>Connect your Web3 metamask wallet to initiate the minting process. <br>There are 100 unique HEXELS available!</p>
+          <p>Connect your Web3 metamask wallet to initiate the minting process. <br>There are 100 unique HEXELZ available!</p>
         {#if !$address}
           <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
           {:else}
