@@ -38,6 +38,8 @@
     "@rollup/plugin-json": "^4.1.0",
     "aframe-svelte": "^1.0.1",
     "buffer": "^6.0.3",
+    "netlify": "^10.0.0",
+    "netlify-cli": "^8.1.7",
     "punycode": "^2.1.1",
     "sirv-cli": "^1.0.0",
     "string_decoder": "^1.3.0",
