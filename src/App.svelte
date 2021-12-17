@@ -140,11 +140,12 @@
   transition:all 0.2s ease;
 }
 .mint-button:hover{
-  background-image:url('/imgs/wallet(2).svg');
   background-color:transparent;  
   border:0px solid #f1f1f1;
 
 }
+.mint-button-2:hover{
+  background-image:url('/imgs/wallet(2).svg');}
   
   nav{display:flex;
     flex-flow:row-reverse;
