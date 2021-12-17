@@ -71,24 +71,29 @@
         
         <header id="sidebar">
           <div class="left-box">
-                    <a href="#hero"><img src="/imgs/impossible-triangle.svg" width="50px" height="50px" alt=""></a>
+                     <Link to="/"> <img  on:click={toggle} src="/imgs/impossible-triangle.svg" width="50px" height="50px" alt=""></Link>
           </div>
 
           <nav>
-             <!--<Link to="mint"><p on:click={toggle} class="nav-text" >Mint</p></Link>
-            <Link to="gallery"><p on:click={toggle} class="nav-text" >Gallery</p></Link>
+             <!--
+            <Link to="/"><p on:click={toggle} class="nav-text" >HOME</p></Link>
+            <a href="#mint"><p on:click={toggle} class="nav-text" >Mint</p></a>
             <Link to="roadmap"><p on:click={toggle} class="nav-text" >Roadmap</p></Link>
            -->
-            <a href="#about"><p on:click={toggle} class="nav-text" >About</p></a>
-            <a href="#mint"><p on:click={toggle} class="nav-text" >Mint</p></a>
-            <a href="#roadmap"><p on:click={toggle} class="nav-text" >Roadmap</p></a>
+            
+            <Link to="mint"><p on:click={toggle} class="nav-text" >Mint</p></Link>
+            
+            <Link to="roadmap"><p on:click={toggle} class="nav-text" >Roadmap</p></Link>
+            
+            <Link to="gallery"><p on:click={toggle} class="nav-text" >Gallery</p></Link>
+            
           </nav>
 
           <div class="right-box">
             {#if !$address}
-            <button on:click={connect} class="mint-button"></button>
+            <button on:click={connect} class="mint-button mint-button-2"></button>
           {:else}
-          <a href="/mint"><button class="mint-button"><p>Go To Mint</p></button></a>
+        <Link to="mint"><button class="mint-button "><p>MINT</p></button></Link>
           {/if} 
           </div>
         </header>
@@ -97,6 +102,7 @@
           <Route path="/"><Home /></Route>
           <Route path="/mint" component={Mint}><Mint /></Route>
           <Route path="/gallery" component={Gallery}><Gallery /></Route>
+          <Route path="/roadmap" component={Roadmap}><Roadmap /></Route>
           <Route path="/*" component={Four}><Four /></Route>
         </div> 
       </Router>
@@ -127,22 +133,27 @@
 	cursor:pointer;
   height:50px;
   border-radius:4px;
-  border:0px solid black;
+  border:1px solid black;
   transition:all 0.2s ease;
   font-weight:100;
   box-shadow:unset;
+text-align:center;display:flex;
+flex-flow:column;justify-content:center;
+font-weight:300;
   padding:16px;
-  background-image:url('/imgs/wallet(1).svg');
 }
+.mint-button-2{
+  background-image:url('/imgs/wallet(1).svg');border-width:0px!important;}
 .mint-button > p{
   transition:all 0.2s ease;
 }
 .mint-button:hover{
-  background-image:url('/imgs/wallet(2).svg');
   background-color:transparent;  
   border:0px solid #f1f1f1;
 
 }
+.mint-button-2:hover{
+  background-image:url('/imgs/wallet(2).svg');}
   
   nav{display:flex;
     flex-flow:row-reverse;

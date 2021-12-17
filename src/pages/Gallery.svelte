@@ -49,27 +49,6 @@ var metadata = {
   <div on:click={connect} style="" class="mint-button"><p>Connect Wallet</p></div>
   {:else}-->
   <Gallery>
-
-    <div class="nft-card">
-      <div class="nft-card-inner">
-        <img transition:fade src="https://www.freepsdbazaar.com/wp-content/uploads/2020/06/sky-replace/sun-rise/sunrise-06-freepsdbazaar.jpg" style="z-index:2;position:relative;height:256px;width:256px" alt="">
-        </div>
-      </div>
-    <div class="nft-card">
-      <div class="nft-card-inner">
-        <img transition:fade src="https://www.freepsdbazaar.com/wp-content/uploads/2020/06/sky-replace/sun-rise/sunrise-19-freepsdbazaar.jpg" style="z-index:2;position:relative;height:256px;width:256px" alt="">
-        </div>
-    </div>
-    <div class="nft-card">
-      <div class="nft-card-inner">
-        <img transition:fade src="http://imaging.nikon.com/lineup/coolpix/p/p7000/img/sample/img_02_b.jpg" style="z-index:2;position:relative;height:256px;width:256px" alt="">
-        </div>
-    </div>
-    <div class="nft-card">
-      <div class="nft-card-inner">
-        <img transition:fade src="https://pixy.org/src/0/6182.jpg" style="z-index:2;position:relative;height:256px;width:256px" alt="">
-        </div>
-    </div>
        <!--{#each $nfts as nft}
     <div class="nft-card">
       <div class="nft-card-inner">
@@ -77,7 +56,6 @@ var metadata = {
         </div>
       </div>
     {/each}  -->
-
   </Gallery>
    <!--{/if} -->
 
