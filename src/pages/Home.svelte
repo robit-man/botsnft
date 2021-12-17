@@ -5,10 +5,7 @@ import { address, contract, provider, nfts, balances } from '../store';
 import { Swiper, SwiperSlide } from 'swiper/svelte';
 import "swiper/css/pagination";
 import Mask from "./mask.svelte";
-import Gallery from "./Gallery.svelte";
-import Example from "./example.svelte";
-import "aframe"
-import "aframe-svelte"
+
     //Help import data from opensea and pass into SwiperSlide <3 
     import { 
         initProvider,
