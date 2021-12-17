@@ -86,9 +86,9 @@
 
           <div class="right-box">
             {#if !$address}
-            <button on:click={connect} class="mint-button"></button>
+            <button on:click={connect} class="mint-button mint-button-2"></button>
           {:else}
-          <a href="/mint"><button class="mint-button"><p>Go To Mint</p></button></a>
+          <a href="/mint"><button class="mint-button "><p>MINT</p></button></a>
           {/if} 
           </div>
         </header>
@@ -127,13 +127,14 @@
 	cursor:pointer;
   height:50px;
   border-radius:4px;
-  border:0px solid black;
+  border:1px solid black;
   transition:all 0.2s ease;
   font-weight:100;
   box-shadow:unset;
   padding:16px;
-  background-image:url('/imgs/wallet(1).svg');
 }
+.mint-button-2{
+  background-image:url('/imgs/wallet(1).svg');border-width:0px!important;}
 .mint-button > p{
   transition:all 0.2s ease;
 }
