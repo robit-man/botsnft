@@ -75,12 +75,13 @@
           </div>
 
           <nav>
-             <!--<Link to="mint"><p on:click={toggle} class="nav-text" >Mint</p></Link>
+             <!--
             <Link to="gallery"><p on:click={toggle} class="nav-text" >Gallery</p></Link>
+            <a href="#mint"><p on:click={toggle} class="nav-text" >Mint</p></a>
             <Link to="roadmap"><p on:click={toggle} class="nav-text" >Roadmap</p></Link>
            -->
             <a href="#about"><p on:click={toggle} class="nav-text" >About</p></a>
-            <a href="#mint"><p on:click={toggle} class="nav-text" >Mint</p></a>
+            <Link to="mint"><p on:click={toggle} class="nav-text" >Mint</p></Link>
             <a href="#roadmap"><p on:click={toggle} class="nav-text" >Roadmap</p></a>
           </nav>
 
