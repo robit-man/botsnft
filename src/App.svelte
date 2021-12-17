@@ -83,6 +83,10 @@
             
             <Link to="mint"><p on:click={toggle} class="nav-text" >Mint</p></Link>
             
+            <Link to="roadmap"><p on:click={toggle} class="nav-text" >Roadmap</p></Link>
+            
+            <Link to="gallery"><p on:click={toggle} class="nav-text" >Gallery</p></Link>
+            
           </nav>
 
           <div class="right-box">
