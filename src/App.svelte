@@ -71,18 +71,18 @@
         
         <header id="sidebar">
           <div class="left-box">
-                    <a href="#hero"><img src="/imgs/impossible-triangle.svg" width="50px" height="50px" alt=""></a>
+                     <Link to="/"> <img  on:click={toggle} src="/imgs/impossible-triangle.svg" width="50px" height="50px" alt=""></Link>
           </div>
 
           <nav>
              <!--
-            <Link to="gallery"><p on:click={toggle} class="nav-text" >Gallery</p></Link>
+            <Link to="/"><p on:click={toggle} class="nav-text" >HOME</p></Link>
             <a href="#mint"><p on:click={toggle} class="nav-text" >Mint</p></a>
             <Link to="roadmap"><p on:click={toggle} class="nav-text" >Roadmap</p></Link>
            -->
-            <a href="#about"><p on:click={toggle} class="nav-text" >About</p></a>
+            
             <Link to="mint"><p on:click={toggle} class="nav-text" >Mint</p></Link>
-            <a href="#roadmap"><p on:click={toggle} class="nav-text" >Roadmap</p></a>
+            
           </nav>
 
           <div class="right-box">
@@ -132,6 +132,9 @@
   transition:all 0.2s ease;
   font-weight:100;
   box-shadow:unset;
+text-align:center;display:flex;
+flex-flow:column;justify-content:center;
+font-weight:300;
   padding:16px;
 }
 .mint-button-2{
