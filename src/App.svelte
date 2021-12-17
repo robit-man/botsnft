@@ -89,7 +89,7 @@
             {#if !$address}
             <button on:click={connect} class="mint-button mint-button-2"></button>
           {:else}
-          <a href="/mint"><button class="mint-button "><p>MINT</p></button></a>
+        <Link to="mint"><button class="mint-button "><p>MINT</p></button></Link>
           {/if} 
           </div>
         </header>
