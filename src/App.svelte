@@ -102,6 +102,7 @@
           <Route path="/"><Home /></Route>
           <Route path="/mint" component={Mint}><Mint /></Route>
           <Route path="/gallery" component={Gallery}><Gallery /></Route>
+          <Route path="/roadmap" component={Roadmap}><Roadmap /></Route>
           <Route path="/*" component={Four}><Four /></Route>
         </div> 
       </Router>
