@@ -32,16 +32,16 @@
       <div class="area">
        <div class="mint-box">
          <div class="img-box">
-           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5bPzhGi7YN02AYZ7jXEXCMAV2A5F0xzc_k3TIN7vu9zMUPcssZkCW_ta-VJBOimriCA8&usqp=CAU" alt="">
+           <img src="/imgs/Hexels_20.png" alt="">
           </div>
           <div class="text-row">
-            <p>GURA DROID</p>
-            <p><b>1.0 ETH</b></p>
+            <p>HEXELZ</p>
+            <p><b>0.55 ETH</b></p>
           </div>
           {#if !$address}
           <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
         {:else}
-          <button on:click={mint} class="mint-button"><p>Mint A Droid</p></button>
+          <button on:click={mint} class="mint-button"><p>Mint Hexelz</p></button>
           <br><br>{addressDisplay}  
         {/if} 
        </div>
