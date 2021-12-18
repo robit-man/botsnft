@@ -18,8 +18,6 @@ contract Hexelz is ERC721Tradable {
         uint256 newTokenId = _getNextTokenId();
         require(msg.value == basePrice, "Incorrect ETH Amount");
         require(newTokenId < MAX_SUPPLY, "Sold out");
-        require(!minted[_msgSender()], "Already bought");
-        minted[_msgSender()] = true;
         _incrementTokenId();
         _mint(_msgSender(), newTokenId);
         payable(owner()).transfer(msg.value);
