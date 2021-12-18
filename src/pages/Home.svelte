@@ -129,14 +129,6 @@ import Mask from "./mask.svelte";
 
   </div>
 
-  <div class="fullheight"  id="gallery">
-    
-    <div class="area">
-      <div class="text-image-row">
-       
-      </div>
-    </div>
-  </div>
 
   <div class="fullheight" id="mint">
     <div class="area" style="">

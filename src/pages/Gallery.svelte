@@ -60,7 +60,7 @@ var nft = {
   <div class="carousel-constraint">
   <Carousel>
   {#each hexelz as { id }}
-        <img transition:fade src="/imgs/Hexelz/Hexelz/Hexels_{id}.png" style="z-index:2;position:relative;height:300px;width:300pxborder-radius:4px;" alt="">
+        <img transition:fade src="/imgs/Hexelz/Hexelz/Hexels_{id}.png" style="z-index:2;position:relative;height:300px;pointer-events:none;width:300pxborder-radius:4px;" alt="">
     {/each} 
   </Carousel>
    <!--{/if} -->

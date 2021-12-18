@@ -266,13 +266,15 @@ input:disabled {
 	box-shadow:#9100ff 0.5rem 0.5rem;
 }
 .sc-carousel-dots__container {margin-top:1rem;}
-.sc-carousel__pages-window{transition:all 0.2s ease;box-shadow:#9100ff 1rem 1rem;overflow:hidden;border-radius:4px;}
+.sc-carousel__pages-window{transition:all 0.2s ease;box-shadow:#9100ff 0.5rem 0.5rem,#9100ff 0.4rem 0.4rem,#9100ff 0.3rem 0.3rem,#9100ff 0.2rem 0.2rem,#9100ff 0.1rem 0.1rem;overflow:hidden;border-radius:4px;}
 
 .sc-carousel__pages-window:hover{
-	box-shadow:#9100ff 0.5rem 0.5rem;
+	box-shadow:0px 0px transparent;
 }
 .sc-carousel-dot__dot{background-color:#9100ff!important;}
-.area{background:#f1f1f1;padding:2rem 2rem ;}
+.area{background-color:#f1f1f1;padding:2rem 2rem ;background-blend-mode:color-burn;}
+.area:nth-child(1){background-size:500px;background-repeat:no-repeat;background-attachment:Scroll;background-position-y:center;background-position-x:-20px;background-image:url(/imgs/feelers.png);}
+.area:nth-child(2){background-size:500px;background-repeat:no-repeat;background-attachment:Scroll;background-position-y:center;background-position-x:calc(100% + 20px);background-image:url(/imgs/feelers2.png);}
 button {
 	color:#101010;
 	border:2px solid transparent;
