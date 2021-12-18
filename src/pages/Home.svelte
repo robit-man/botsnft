@@ -1,4 +1,5 @@
 <script>
+import { Router, Route, Link } from "svelte-routing";
 import { onMount, getContext} from 'svelte';
 import { slide, fade } from 'svelte/transition';
 import { address, contract, provider, nfts, balances } from '../store';
@@ -89,7 +90,10 @@ import Mask from "./mask.svelte";
           EXP<b style="animation: flash 7s ease alternate infinite;">L</b>ORING <b style="animation: flash3 10s ease alternate infinite;">C</b>OMPLEX GEOMETRIES
         </h1>
         <p class="subheader">>> ESCHER AND PENROSE INSPIRED</p>
-        Hexelz NFT is about complex geometries and art. It’s non generative, drawn piece by piece, inspired by the imaginative works of M C Escher. All art is based on a triangulation grid. Hexelz NFTs shows a colorful approach with visual illusions and tricks. Called impossible objects, the art is about geometry, tessellations, and mathematics.       <p></p>
+        <p>Hexelz NFT is about complex geometries and art. It’s non generative, drawn piece by piece, inspired by the imaginative works of M C Escher. All art is based on a triangulation grid. Hexelz NFTs shows a colorful approach with visual illusions and tricks. Called impossible objects, the art is about geometry, tessellations, and mathematics.       
+        </p>
+        <Link to="/gallery"><button class="mint-button"><p>View Minted</p></button></Link>
+
       </div>
       <div class="image-box" style="border-radius:4px;">
         <div class="perspective-hover-1" style="border-radius:4px;background-size:cover;" src="" alt=""><img style="width:100%;height:100%;pointer-events: none;" src="/imgs/Hexels_39.png" alt=""></div>
