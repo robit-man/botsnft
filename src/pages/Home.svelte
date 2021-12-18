@@ -83,7 +83,7 @@ import Mask from "./mask.svelte";
   <div class="fullheight" id="about">
 
     <div class="area">
-      <div class="text-image-row">
+      <div class="text-image-row wrap-reverse">
       <div class="text-box">
         <h1>
           EXP<b style="animation: flash 7s ease alternate infinite;">L</b>ORING <b style="animation: flash3 10s ease alternate infinite;">C</b>OMPLEX GEOMETRIES
@@ -101,7 +101,7 @@ import Mask from "./mask.svelte";
 
 
     <div class="area" style="" id="roadmap" >
-      <div class="text-image-row wrap-reverse">
+      <div class="text-image-row ">
 
         <div class="image-box" style="border-radius:4px;">
           <div class="perspective-hover-2" style="border-radius:4px;background-size:cover;" src="" alt=""><img style="width:100%;height:100%;pointer-events: none;" src="/imgs/Hexels_20.png" alt=""></div>
@@ -133,7 +133,7 @@ import Mask from "./mask.svelte";
   <div class="fullheight" id="mint">
     <div class="area" style="">
       
-      <div class="text-image-row ">
+      <div class="text-image-row wrap-reverse">
         <div class="text-box2">
           <h1>
             MINT HEXELZ
@@ -166,7 +166,8 @@ import Mask from "./mask.svelte";
   overflow:visible!important;
   max-width:512px;
 }
-.mask{   
+.mask{  
+  mix-blend-mode: luminosity; 
     display: flex;
     width: 512px;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/1280px-MetaMask_Fox.svg.png);

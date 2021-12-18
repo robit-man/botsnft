@@ -259,7 +259,7 @@ input:disabled {
 .image-box{
 	perspective:600px;
 	max-width:512px;
-	box-shadow:#9100ff 1rem 1rem;border-radius:4px;margin:auto 0px;
+	box-shadow:#9100ff 1rem 1rem;border-radius:4px;margin:2rem auto;
 	transition: all 0.2s ease;
 }
 .image-box:hover{
