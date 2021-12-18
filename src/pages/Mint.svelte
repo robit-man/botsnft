@@ -57,7 +57,7 @@
 	margin:auto;
   width:100%;
 	min-width:150px;
-	cursor:pointer;
+	cursor:pointer;border-radius:4px;
   border:1px solid #656565;
   transition:all 0.2s ease;
   border-radius:unset!important;
