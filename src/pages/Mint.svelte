@@ -28,7 +28,8 @@
 </script>
 
     <div class="wrapper">
-      <Link to="roadmap"><div class="mint-button-cta-box" style=""><h1>ROADMAP ▶</h1></div></Link>
+      <div class="fullheight" >
+        <Link to="mint"><div class="mint-button-cta-box" style=""><h1>ROADMAP ▶</h1></div></Link>
 
       <div class="area">
        <div class="mint-box">
@@ -47,6 +48,7 @@
         {/if} 
        </div>
       </div>
+    </div>
 
     </div>
     

@@ -15,7 +15,6 @@
 
     <div class="wrapper">
       <div class="fullheight" id="about">
-        <Link to="mint"><div class="mint-button-cta-box" style=""><h1>MINT ▼</h1></div></Link>
 
         <div class="area">
           <div class="text-image-row">
