@@ -6,7 +6,7 @@ import { address, contract, provider, nfts, balances } from '../store';
 import Card from "../cards/dex.svelte";
 import { Swiper, SwiperSlide } from 'swiper/svelte';
 import Carousel from 'svelte-carousel';
-
+let fetchJson = fetch('json/1').then(res => res.json());
     //Help import data from opensea and pass into SwiperSlide <3 
     import { 
         initProvider,
@@ -22,6 +22,10 @@ import Carousel from 'svelte-carousel';
       { id: '07'},
       { id: '08'},
       { id: '09'},
+      { id: '10'},
+      { id: '11'},
+      { id: '12'},
+      { id: '13'},
 	];
     const app = getContext('app');
     var addressDisplay = ''
@@ -52,17 +56,29 @@ var nft = {
 
 
 <div class="gallery">
-  
+  <Link to="mint"><div class="mint-button-cta-box" style=""><h1>MINT ▼</h1></div></Link>
  <!--
   {#if !$address}
   <div on:click={connect} style="" class="mint-button"><p>Connect Wallet</p></div>
   {:else}-->
   <div class="carousel-constraint">
+    
+
   <Carousel>
-  {#each hexelz as { id }}
-        <img transition:fade src="/imgs/Hexelz/Hexelz/Hexels_{id}.png" style="z-index:2;position:relative;height:300px;width:300pxborder-radius:4px;" alt="">
-    {/each} 
-  </Carousel>
+  {#each hexelz as { id }, i}
+        {#if i < 9}
+        <img transition:fade src="/imgs/Hexelz/Hexelz/Hexels_0{i + 1}.png" style="z-index:2;position:relative;height:300px;pointer-events:none;width:300pxborder-radius:4px;" alt="">
+        {:else}
+        <img transition:fade src="/imgs/Hexelz/Hexelz/Hexels_{i + 1}.png" style="z-index:2;position:relative;height:300px;pointer-events:none;width:300pxborder-radius:4px;" alt="">
+        {/if}
+        {/each} 
+  </Carousel>    
+    <!-- 
+  {#await fetchJson}
+  <p>Loading JSON</p>
+  {:then result}
+  <p>{JSON.stringify(result)}</p>
+  {/await} -->
    <!--{/if} -->
   </div>
 </div>
@@ -70,6 +86,7 @@ var nft = {
 
 
 <style>
+ 
 .carousel-constraint{width:512px;height:512px;margin:auto;position:relative;display:flex;}
 </style>
 

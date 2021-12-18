@@ -28,6 +28,8 @@
 </script>
 
     <div class="wrapper">
+      <div class="fullheight" >
+        <Link to="mint"><div class="mint-button-cta-box" style=""><h1>ROADMAP ▶</h1></div></Link>
 
       <div class="area">
        <div class="mint-box">
@@ -46,13 +48,16 @@
         {/if} 
        </div>
       </div>
+    </div>
 
     </div>
     
 
 
 <style>
-  
+   .wrapper{display: flex;
+flex-flow: column;
+justify-content: center;}
 .mint-button{
 	margin:auto;
   width:100%;
@@ -60,7 +65,7 @@
 	cursor:pointer;border-radius:4px;
   border:1px solid #656565;
   transition:all 0.2s ease;
-  border-radius:unset!important;
+  border-radius:4px!important;
 }
 .mint-button > p{
   transition:all 0.2s ease;
@@ -71,7 +76,9 @@
 }
 .mint-button:hover > p {color:#d8d7da;}
     .mint-box{width:350px;height: min-content;margin:auto;}
-    .img-box{width:350px;height:350px;}
+    .img-box{transition:all 0.2s ease;border-radius:4px;width:350px;height:350px;overflow: hidden;box-shadow: #9100ff 0.5rem 0.5rem,#9100ff 0.4rem 0.4rem,#9100ff 0.3rem 0.3rem,#9100ff 0.2rem 0.2rem,#9100ff 0.1rem 0.1rem;}
+    .img-box:hover{	box-shadow:0px 0px transparent;
+}
     .img-box > img{width:100%;height:100%;}
     .text-row{display:flex;flex-flow:row;justify-content: space-between;}
 

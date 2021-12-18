@@ -1,4 +1,5 @@
 <script>
+import { Router, Route, Link } from "svelte-routing";
 import { onMount, getContext} from 'svelte';
 import { slide, fade } from 'svelte/transition';
 import { address, contract, provider, nfts, balances } from '../store';
@@ -47,13 +48,13 @@ import Mask from "./mask.svelte";
     <img src="/imgs/focus.svg" width="32px" height="32px" style="opacity:0.9;animation: flash4 3s ease alternate infinite;mix-blend-mode:difference;position:fixed;bottom:1rem;left:1rem;" alt="">
   </div>
   <div class="hero " id="hero">
-    <h1 style="position:relative;z-index:2;color:#f1f1f1;line-height:1;padding:2rem;mix-blend-mode:normal;" >H<b style="animation: flash3 2s ease alternate infinite;">E</b><div class="mobile-break"><br></div>X<b style="animation: flash3 4s ease alternate infinite;">E</b><div class="mobile-break"><br></div>L<b style="animation: flash3 5s ease alternate infinite;">Z</b></h1>
+    <h1 style="position:relative;z-index:2;color:rgba(132, 226, 255, 0.49);line-height:1;padding:2rem;mix-blend-mode:normal;" >H<b style="animation: flash3 2s ease alternate infinite;">E</b><div class="mobile-break"><br></div>X<b style="animation: flash3 4s ease alternate infinite;">E</b><div class="mobile-break"><br></div>L<b style="animation: flash3 5s ease alternate infinite;">Z</b></h1>
     <a href="#mint"><div class="mint-button-cta-box" style=""><h1>MINT ▼</h1></div></a>
     <svg id="svg-pattern" width="100%" height="calc(100% + 4rem)">
       <defs>
         <pattern id='half-hex-escher' patternUnits="userSpaceOnUse" width="130" height="75">
           <symbol id='half-hex'>
-            <path d="M173.2,150 v200 l86.6,-50 v-100 z" stroke="#f1f1f1" stroke-width='2' />
+            <path d="M173.2,150 v200 l86.6,-50 v-100 z" stroke="#f1f1f1" stroke-width='0' />
           </symbol>
           <symbol id='half-hex-flip'>
             <use xlink:href="#half-hex" transform='rotate(180 173.2 250)' />
@@ -83,13 +84,16 @@ import Mask from "./mask.svelte";
   <div class="fullheight" id="about">
 
     <div class="area">
-      <div class="text-image-row">
+      <div class="text-image-row wrap-reverse">
       <div class="text-box">
         <h1>
           EXP<b style="animation: flash 7s ease alternate infinite;">L</b>ORING <b style="animation: flash3 10s ease alternate infinite;">C</b>OMPLEX GEOMETRIES
         </h1>
         <p class="subheader">>> ESCHER AND PENROSE INSPIRED</p>
-        Hexelz NFT is about complex geometries and art. It’s non generative, drawn piece by piece, inspired by the imaginative works of M C Escher. All art is based on a triangulation grid. Hexelz NFTs shows a colorful approach with visual illusions and tricks. Called impossible objects, the art is about geometry, tessellations, and mathematics.       <p></p>
+        <p>Hexelz NFT is about complex geometries and art. It’s non generative, drawn piece by piece, inspired by the imaginative works of M C Escher. All art is based on a triangulation grid. Hexelz NFTs shows a colorful approach with visual illusions and tricks. Called impossible objects, the art is about geometry, tessellations, and mathematics.       
+        </p>
+        <Link to="/gallery"><button class="mint-button"><p>View Minted</p></button></Link>
+
       </div>
       <div class="image-box" style="border-radius:4px;">
         <div class="perspective-hover-1" style="border-radius:4px;background-size:cover;" src="" alt=""><img style="width:100%;height:100%;pointer-events: none;" src="/imgs/Hexels_39.png" alt=""></div>
@@ -101,7 +105,7 @@ import Mask from "./mask.svelte";
 
 
     <div class="area" style="" id="roadmap" >
-      <div class="text-image-row wrap-reverse">
+      <div class="text-image-row ">
 
         <div class="image-box" style="border-radius:4px;">
           <div class="perspective-hover-2" style="border-radius:4px;background-size:cover;" src="" alt=""><img style="width:100%;height:100%;pointer-events: none;" src="/imgs/Hexels_20.png" alt=""></div>
@@ -129,19 +133,11 @@ import Mask from "./mask.svelte";
 
   </div>
 
-  <div class="fullheight"  id="gallery">
-    
-    <div class="area">
-      <div class="text-image-row">
-       
-      </div>
-    </div>
-  </div>
 
   <div class="fullheight" id="mint">
     <div class="area" style="">
       
-      <div class="text-image-row ">
+      <div class="text-image-row wrap-reverse">
         <div class="text-box2">
           <h1>
             MINT HEXELZ
@@ -174,7 +170,8 @@ import Mask from "./mask.svelte";
   overflow:visible!important;
   max-width:512px;
 }
-.mask{   
+.mask{  
+  mix-blend-mode: luminosity; 
     display: flex;
     width: 512px;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/1280px-MetaMask_Fox.svg.png);
@@ -199,11 +196,11 @@ height:80vw;width:80vw;}
 }
 
 
-.color1 { fill: #333; animation: escherflow2 7s ease alternate infinite;}
+.color1 { fill: #333; animation: escherflow2 7s linear infinite;}
 
-.color2 { fill: #444; animation: escherflow3 2s ease alternate infinite;}
+.color2 { fill: #444; animation: escherflow3 2s linear infinite;}
 
-.color3 { fill: #555; animation: escherflow4 5s ease alternate infinite;}
+.color3 { fill: #555; animation: escherflow4 5s linear infinite;}
 
 
   .metamask-container {
@@ -253,7 +250,7 @@ height:80vw;width:80vw;}
   perspective: 600px;
  background-image:linear-gradient(45deg, #00015a, #ff00aa);width:100%;height:100%;display:flex;flex-flow:column;justify-content: center; overflow:hidden;   backdrop-filter:  invert(0%)brightness(0.5);transition:all 0.2s ease;
 }
-#svg-pattern{opacity:0.5;position:absolute;top:0px;left:0px;display:block;animation:zip 10s linear infinite;transition: transform 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.1);}
+#svg-pattern{opacity:0.5;position:absolute;top:0px;left:0px;display:block;animation:zip 20s ease infinite;transition: transform 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.1);}
 .hero:hover{ backdrop-filter: invert(100%)brightness(1);cursor:crosshair;}
 @keyframes zip{
   0%{transform:scale(1.5)rotateY(0deg)rotateX(0deg)rotateZ(0deg)}

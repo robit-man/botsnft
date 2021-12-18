@@ -93,7 +93,7 @@
             {#if !$address}
             <button on:click={connect} class="mint-button mint-button-2"></button>
           {:else}
-        <Link to="mint"><button class="mint-button "><p>MINT</p></button></Link>
+        <Link to="mint"><button on:click={toggle}  class="mint-button mint-button-3"></button></Link>
           {/if} 
           </div>
         </header>
@@ -124,7 +124,12 @@
     left:-164px;transition:all 0.2s ease;
     top:0px;position:fixed;
   }
-  
+  @keyframes flash{
+    0%{opacity:1;}
+    50%{opacity:0;}
+    100%{opacity:1;}
+
+  }
 
 .mint-button{
 	margin:auto;
@@ -144,6 +149,9 @@ font-weight:300;
 }
 .mint-button-2{
   background-image:url('/imgs/wallet(1).svg');border-width:0px!important;}
+  .mint-button-3{
+    animation:flash 2s linear infinite;
+  background-image:url('/imgs/wallet(2).svg');border-width:0px!important;}
 .mint-button > p{
   transition:all 0.2s ease;
 }
@@ -165,6 +173,7 @@ font-weight:300;
 }
 button{margin:1rem;}
 #sidebar{
+  transition:all 0.2s ease;
   top:0px;
   z-index:5;
   position:fixed;
@@ -174,6 +183,7 @@ button{margin:1rem;}
   background:#f1f1f1;
   justify-content: space-between;
   padding: 4rem 2rem;
+  box-shadow:unset;
   height: calc(100vh - 8rem);
 }
 
