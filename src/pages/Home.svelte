@@ -250,7 +250,7 @@ height:80vw;width:80vw;}
   perspective: 600px;
  background-image:linear-gradient(45deg, #00015a, #ff00aa);width:100%;height:100%;display:flex;flex-flow:column;justify-content: center; overflow:hidden;   backdrop-filter:  invert(0%)brightness(0.5);transition:all 0.2s ease;
 }
-#svg-pattern{opacity:0.5;position:absolute;top:0px;left:0px;display:block;animation:zip 2s ease infinite;transition: transform 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.1);}
+#svg-pattern{opacity:0.5;position:absolute;top:0px;left:0px;display:block;animation:zip 20s ease infinite;transition: transform 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.1);}
 .hero:hover{ backdrop-filter: invert(100%)brightness(1);cursor:crosshair;}
 @keyframes zip{
   0%{transform:scale(1.5)rotateY(0deg)rotateX(0deg)rotateZ(0deg)}

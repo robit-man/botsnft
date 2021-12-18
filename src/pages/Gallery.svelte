@@ -66,8 +66,12 @@ var nft = {
 
   <Carousel>
   {#each hexelz as { id }, i}
+        {#if i < 9}
+        <img transition:fade src="/imgs/Hexelz/Hexelz/Hexels_0{i + 1}.png" style="z-index:2;position:relative;height:300px;pointer-events:none;width:300pxborder-radius:4px;" alt="">
+        {:else}
         <img transition:fade src="/imgs/Hexelz/Hexelz/Hexels_{i + 1}.png" style="z-index:2;position:relative;height:300px;pointer-events:none;width:300pxborder-radius:4px;" alt="">
-    {/each} 
+        {/if}
+        {/each} 
   </Carousel>    
     <!-- 
   {#await fetchJson}
