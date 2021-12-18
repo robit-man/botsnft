@@ -15,6 +15,7 @@
 
     <div class="wrapper">
       <div class="fullheight" id="about">
+        <Link to="mint"><div class="mint-button-cta-box" style=""><h1>MINT ▼</h1></div></Link>
 
         <div class="area">
           <div class="text-image-row">
@@ -44,10 +45,16 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
+} .wrapper{display: flex;
+flex-flow: column;
+justify-content: center;}
 canvas {
   width:98vmin;
   height:98vmin;
+}@media screen and (max-width:900px){
+  .wrapper{display: flex;
+flex-flow: column;
+justify-content: flex-start;}
 }
  </style>
  

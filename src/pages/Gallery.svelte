@@ -52,7 +52,7 @@ var nft = {
 
 
 <div class="gallery">
-  
+  <Link to="mint"><div class="mint-button-cta-box" style=""><h1>MINT ▼</h1></div></Link>
  <!--
   {#if !$address}
   <div on:click={connect} style="" class="mint-button"><p>Connect Wallet</p></div>
@@ -62,7 +62,9 @@ var nft = {
   {#each hexelz as { id }}
         <img transition:fade src="/imgs/Hexelz/Hexelz/Hexels_{id}.png" style="z-index:2;position:relative;height:300px;pointer-events:none;width:300pxborder-radius:4px;" alt="">
     {/each} 
-  </Carousel>
+  </Carousel>    
+  
+
    <!--{/if} -->
   </div>
 </div>
@@ -70,6 +72,7 @@ var nft = {
 
 
 <style>
+ 
 .carousel-constraint{width:512px;height:512px;margin:auto;position:relative;display:flex;}
 </style>
 
