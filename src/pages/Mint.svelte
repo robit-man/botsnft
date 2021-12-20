@@ -29,7 +29,6 @@
 
     <div class="wrapper">
       <div class="fullheight" >
-        <Link to="mint"><div class="mint-button-cta-box" style=""><h1>ROADMAP ▶</h1></div></Link>
 
       <div class="area">
        <div class="mint-box">
