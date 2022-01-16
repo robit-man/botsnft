@@ -1,0 +1,5 @@
+npm install nodemon-webpack-plugin --save-dev && npm install --save-dev @tsconfig/svelte typescript svelte-preprocess svelte-check
+
+nom i
+
+npm run dev
