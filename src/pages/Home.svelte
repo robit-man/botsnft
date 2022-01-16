@@ -48,7 +48,7 @@ import Mask from "./mask.svelte";
     <img src="/imgs/focus.svg" width="32px" height="32px" style="opacity:0.9;animation: flash4 3s ease alternate infinite;mix-blend-mode:difference;position:fixed;bottom:1rem;left:1rem;" alt="">
   </div>
   <div class="hero " id="hero">
-    <h1 style="position:relative;z-index:2;color:rgba(132, 226, 255, 0.49);line-height:1;padding:2rem;mix-blend-mode:normal;" >H<b style="animation: flash3 2s ease alternate infinite;">E</b><div class="mobile-break"><br></div>X<b style="animation: flash3 4s ease alternate infinite;">E</b><div class="mobile-break"><br></div>L<b style="animation: flash3 5s ease alternate infinite;">Z</b></h1>
+    <h1 style="position:relative;z-index:2;color:rgba(132, 226, 255, 0.49);line-height:1;padding:2rem;mix-blend-mode:normal;" >N<b style="animation: flash3 2s ease alternate infinite;">F</b><div class="mobile-break"><br></div>T<b style="animation: flash3 4s ease alternate infinite;">-</b><div class="mobile-break"><br></div>B<div class="mobile-break"><br></div>0<div class="mobile-break"><br></div>+<b style="animation: flash3 5s ease alternate infinite;">5</b></h1>
     <a href="#mint"><div class="mint-button-cta-box" style=""><h1>MINT ▼</h1></div></a>
     <svg id="svg-pattern" width="100%" height="calc(100% + 4rem)">
       <defs>
@@ -90,7 +90,8 @@ import Mask from "./mask.svelte";
           EXP<b style="animation: flash 7s ease alternate infinite;">L</b>ORING <b style="animation: flash3 10s ease alternate infinite;">C</b>OMPLEX GEOMETRIES
         </h1>
         <p class="subheader">>> ESCHER AND PENROSE INSPIRED</p>
-        <p>Hexelz NFT is about complex geometries and art. It’s non generative, drawn piece by piece, inspired by the imaginative works of M C Escher. All art is based on a triangulation grid. Hexelz NFTs shows a colorful approach with visual illusions and tricks. Called impossible objects, the art is about geometry, tessellations, and mathematics.       
+        <p>NFT b0+5 (NFT Bots) are a pixel art series created by Keegan Rice of Dream Weaver Arts in Collaboration with Geometric Energy Corporation (GEC). Inspired by classic games and fuelled by GEC’s work in crypto, AI, game development, and technology. With 100 pieces in the collection, there’s a bot for every occasion.
+       
         </p>
         <Link to="/gallery"><button class="mint-button"><p>View Minted</p></button></Link>
 
