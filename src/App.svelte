@@ -2,7 +2,6 @@
     import { Router, Route, Link } from "svelte-routing";
     import Home from "./pages/Home.svelte";
     import Mint from "./pages/Mint.svelte";
-    import Roadmap from "./pages/Roadmap.svelte";
     import Four from "./pages/Four.svelte";    
     import Gallery from "./pages/Gallery.svelte";
     export let url = '';
@@ -83,8 +82,6 @@
             
             <Link to="mint"><p on:click={toggle} class="nav-text" >Mint</p></Link>
             
-            <Link to="roadmap"><p on:click={toggle} class="nav-text" >Roadmap</p></Link>
-            
             <Link to="gallery"><p on:click={toggle} class="nav-text" >Gallery</p></Link>
             
           </nav>
@@ -102,7 +99,6 @@
           <Route path="/"><Home /></Route>
           <Route path="/mint" component={Mint}><Mint /></Route>
           <Route path="/gallery" component={Gallery}><Gallery /></Route>
-          <Route path="/roadmap" component={Roadmap}><Roadmap /></Route>
           <Route path="/*" component={Four}><Four /></Route>
         </div> 
       </Router>
