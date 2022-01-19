@@ -4,6 +4,8 @@ npm i
 
 npm run dev
 
+git pull
+
 git add --all
 
 git commit -m '*'

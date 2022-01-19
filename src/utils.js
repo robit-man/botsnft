@@ -13,7 +13,6 @@ import {
     totalSupply,
     maxSupply
     } from './store.js';
-import { abi } from './abis/SpacePepe.json';
 import { get } from 'svelte/store'
 
 const NFT_CONTRACT_ADDRESS = '0xbfFE95CB43523d96Dba4C0b8214b2ccF4b90087d'
