@@ -120,8 +120,8 @@ import Mask from "./mask.svelte";
             Learn More about the artist, and follow for ongoing collaborations and projects!
         </p>
         <div class="row">
-        <a href="https://twitter.com/HexelzNFT"><img width="128px" style="opacity:0.7" src="/imgs/twitter.png" alt=""></a>
-        <a href="https://t.co/qF2LhfTU8g"><img width="128px" style="opacity:0.7" src="/imgs/discord.png" alt=""></a>
+        <a href="https://www.instagram.com/dreamweaverarts/"  target="_blank" rel="noopener noreferrer"><img width="128px" style="opacity:0.7" src="/imgs/instagram.png" alt=""></a>
+        <a href="https://t.co/qF2LhfTU8g" target="_blank" rel="noopener noreferrer"><img width="128px" style="opacity:0.7" src="/imgs/discord.png" alt=""></a>
         <a href="mailto:Hexelz@protonmail.com"><img height="100px" style="opacity:0.7" src="/imgs/email.png" alt=""></a>
       </div>
       </div>
