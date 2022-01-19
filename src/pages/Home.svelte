@@ -114,9 +114,8 @@ import Mask from "./mask.svelte";
 
       <div class="text-box2">
         <h1>
-          CON<b style="animation: flash 7s ease alternate infinite;">N</b>ECT WI<b style="animation: flash2 10s ease alternate infinite;">T</b>H THE C<b style="animation: flash3 7s ease alternate infinite;">U</b>RATORS
+          ABOUT KEEGAN
         </h1>
-        <p class="subheader">>> LEARN MORE</p>
           <p>
             Learn More about the artist, and follow for ongoing collaborations and projects!
         </p>
