@@ -113,11 +113,10 @@ import Mask from "./mask.svelte";
 
       <div class="text-box2">
         <h1>
-          CON<b style="animation: flash 7s ease alternate infinite;">N</b>ECT WI<b style="animation: flash2 10s ease alternate infinite;">T</b>H THE C<b style="animation: flash3 7s ease alternate infinite;">U</b>RATORS
+          ABOUT KEEGAN
         </h1>
-        <p class="subheader">>> LEARN MORE</p>
           <p>
-            Learn More about the artist, and follow for ongoing collaborations and projects!
+            Keegan H. Rice Currently Lives and Works in Calgary, Alberta. Working mostly in acrylic, spray-paint, and oil, his work puts a modern spin on ancient symbols and primal archetypes. He is currently exploring multimedia installations while continuing to work as a freelance fine-artist as well as producing concept art and NFT content for Geometric Energy Corporation. He has received training at the Victoria College of Art, and has had his work displayed at numerous events, establishments, and galleries since 2010.
         </p>
         <div class="row">
         <a href="https://www.instagram.com/dreamweaverarts/"  target="_blank" rel="noopener noreferrer"><img width="128px" style="opacity:0.7" src="/imgs/instagram.png" alt=""></a>
