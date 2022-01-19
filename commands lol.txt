@@ -4,8 +4,10 @@ npm i
 
 npm run dev
 
+git pull
+
 git add --all
 
-git commit -m '*'
+git commit -m 'put whatever you did here'
 
 git push

@@ -87,9 +87,8 @@ import Mask from "./mask.svelte";
       <div class="text-image-row wrap-reverse">
       <div class="text-box">
         <h1>
-          EXP<b style="animation: flash 7s ease alternate infinite;">L</b>ORING <b style="animation: flash3 10s ease alternate infinite;">C</b>OMPLEX GEOMETRIES
+          NFT B0+5
         </h1>
-        <p class="subheader">>> ESCHER AND PENROSE INSPIRED</p>
         <p>NFT b0+5 (NFT Bots) are a pixel art series created by Keegan Rice of Dream Weaver Arts in Collaboration with Geometric Energy Corporation (GEC). Inspired by classic games and fuelled by GEC’s work in crypto, AI, game development, and technology. With 100 pieces in the collection, there’s a bot for every occasion.
        
         </p>
