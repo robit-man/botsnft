@@ -113,7 +113,7 @@ import Mask from "./mask.svelte";
 
       <div class="text-box2">
         <h1>
-          ABOUT KEEGAN
+          ABOUT THE ARTIST
         </h1>
           <p>
             Keegan H. Rice Currently Lives and Works in Calgary, Alberta. Working mostly in acrylic, spray-paint, and oil, his work puts a modern spin on ancient symbols and primal archetypes. He is currently exploring multimedia installations while continuing to work as a freelance fine-artist as well as producing concept art and NFT content for Geometric Energy Corporation. He has received training at the Victoria College of Art, and has had his work displayed at numerous events, establishments, and galleries since 2010.
