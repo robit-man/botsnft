@@ -20,12 +20,6 @@ let fetchJson = fetch('json/1').then(res => res.json());
       { id: '05'},
       { id: '06'},
       { id: '07'},
-      { id: '08'},
-      { id: '09'},
-      { id: '10'},
-      { id: '11'},
-      { id: '12'},
-      { id: '13'},
 	];
     const app = getContext('app');
     var addressDisplay = ''
@@ -62,14 +56,14 @@ var nft = {
   <div on:click={connect} style="" class="mint-button"><p>Connect Wallet</p></div>
   {:else}-->
   <div class="carousel-constraint">
-    
+     
 
   <Carousel>
   {#each hexelz as { id }, i}
-        {#if i < 9}
-        <img transition:fade src="/imgs/Hexelz/Hexelz/Hexels_0{i + 1}.png" style="z-index:2;position:relative;height:300px;pointer-events:none;width:300pxborder-radius:4px;" alt="">
+        {#if i < 7}
+        <img transition:fade src="/imgs/bots/{i + 1}.png" style="z-index:2;position:relative;height:300px;pointer-events:none;width:300pxborder-radius:4px;" alt="">
         {:else}
-        <img transition:fade src="/imgs/Hexelz/Hexelz/Hexels_{i + 1}.png" style="z-index:2;position:relative;height:300px;pointer-events:none;width:300pxborder-radius:4px;" alt="">
+        <img transition:fade src="/imgs/bots/{i + 1}.png" style="z-index:2;position:relative;height:300px;pointer-events:none;width:300pxborder-radius:4px;" alt="">
         {/if}
         {/each} 
   </Carousel>    

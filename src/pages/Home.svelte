@@ -42,42 +42,11 @@ import Mask from "./mask.svelte";
 <div class="wrapper">
 <div class="escher">
   <div class="backdrop">
-    <img src="/imgs/focus.svg" width="32px" height="32px" style="opacity:0.9;animation: flash 2s ease alternate infinite;mix-blend-mode:difference;position:fixed;top:1rem;right:1rem;" alt="">
-    <img src="/imgs/focus.svg" width="32px" height="32px" style="opacity:0.9;animation: flash2 4s ease alternate infinite;mix-blend-mode:difference;position:fixed;bottom:1rem;right:1rem;" alt="">
-    <!--<img src="/imgs/focus.svg" width="32px" height="32px" style="opacity:0.9;animation: flash3 2s ease alternate infinite;mix-blend-mode:difference;position:fixed;top:1rem;left:1rem;" alt="">-->
-    <img src="/imgs/focus.svg" width="32px" height="32px" style="opacity:0.9;animation: flash4 3s ease alternate infinite;mix-blend-mode:difference;position:fixed;bottom:1rem;left:1rem;" alt="">
-  </div>
+    <img src="/8bitwave.js" alt="">
+   </div>
   <div class="hero " id="hero">
     <h1 style="position:relative;z-index:2;color:rgba(132, 226, 255, 0.49);line-height:1;padding:2rem;mix-blend-mode:normal;" >N<b style="animation: flash3 2s ease alternate infinite;">F</b><div class="mobile-break"><br></div>T<b style="animation: flash3 4s ease alternate infinite;">-</b><div class="mobile-break"><br></div>B<div class="mobile-break"><br></div>0<div class="mobile-break"><br></div>+<b style="animation: flash3 5s ease alternate infinite;">5</b></h1>
     <a href="#mint"><div class="mint-button-cta-box" style=""><h1>MINT ▼</h1></div></a>
-    <svg id="svg-pattern" width="100%" height="calc(100% + 4rem)">
-      <defs>
-        <pattern id='half-hex-escher' patternUnits="userSpaceOnUse" width="130" height="75">
-          <symbol id='half-hex'>
-            <path d="M173.2,150 v200 l86.6,-50 v-100 z" stroke="#f1f1f1" stroke-width='0' />
-          </symbol>
-          <symbol id='half-hex-flip'>
-            <use xlink:href="#half-hex" transform='rotate(180 173.2 250)' />
-          </symbol>
-          <g transform='scale(0.25)'>
-            <g id='hh-vertex'>
-              <use xlink:href="#half-hex" class='color1' />
-              <use xlink:href="#half-hex" transform='rotate(120 173.2 150)' class='color2' />
-              <use xlink:href="#half-hex" transform='rotate(240 173.2 150)' class='color3' />
-              <use xlink:href="#half-hex-flip" class='color2' />
-              <use xlink:href="#half-hex-flip" transform='rotate(120 173.2 150)' class='color3' />
-              <use xlink:href="#half-hex-flip" transform='rotate(240 173.2 150)' class='color1' />
-            </g>
-            <use xlink:href='#hh-vertex' transform='translate(0 -300)' />
-            <use xlink:href='#hh-vertex' transform='translate(259.8 -150)' />
-            <use xlink:href='#hh-vertex' transform='translate(259.8 150)' />
-            <use xlink:href='#hh-vertex' transform='translate(-259.8 -150)' />
-            <use xlink:href='#hh-vertex' transform='translate(-259.8 150)' />
-          </g>
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#half-hex-escher)" />
-    </svg>
     
   </div>
 </div>
@@ -96,7 +65,7 @@ import Mask from "./mask.svelte";
 
       </div>
       <div class="image-box" style="border-radius:4px;">
-        <div class="perspective-hover-1" style="border-radius:4px;background-size:cover;" src="" alt=""><img style="width:100%;height:100%;pointer-events: none;" src="/imgs/Hexels_39.png" alt=""></div>
+        <div class="perspective-hover-1" style="border-radius:4px;background-size:cover;" src="" alt=""><img style="width:100%;height:100%;pointer-events: none;" src="/imgs/8bitBotsSample.jpeg" alt=""></div>
       </div>
     </div>
 
@@ -108,7 +77,7 @@ import Mask from "./mask.svelte";
       <div class="text-image-row ">
 
         <div class="image-box" style="border-radius:4px;">
-          <div class="perspective-hover-2" style="border-radius:4px;background-size:cover;" src="" alt=""><img style="width:100%;height:100%;pointer-events: none;" src="/imgs/Hexels_20.png" alt=""></div>
+          <div class="perspective-hover-2" style="border-radius:4px;background-size:cover;" src="" alt=""><img style="width:100%;height:100%;pointer-events: none;" src="/imgs/keeganBio.jpg" alt=""></div>
         </div>
 
       <div class="text-box2">
