@@ -88,7 +88,7 @@ import Mask from "./mask.svelte";
             Keegan H. Rice Currently Lives and Works in Calgary, Alberta. Working mostly in acrylic, spray-paint, and oil, his work puts a modern spin on ancient symbols and primal archetypes. He is currently exploring multimedia installations while continuing to work as a freelance fine-artist as well as producing concept art and NFT content for Geometric Energy Corporation. He has received training at the Victoria College of Art, and has had his work displayed at numerous events, establishments, and galleries since 2010.
         </p>
         <div class="row">
-        <a href="https://www.instagram.com/dreamweaverarts/"  target="_blank" rel="noopener noreferrer"><img width="128px" style="opacity:0.7" src="/imgs/instagram.png" alt=""></a>
+        <a href="https://www.instagram.com/dreamweaverarts/"  target="_blank" rel="noopener noreferrer"><img width="80px" style="opacity:0.7" src="/imgs/instagram.png" alt=""></a>
         <a href="https://t.co/qF2LhfTU8g" target="_blank" rel="noopener noreferrer"><img width="128px" style="opacity:0.7" src="/imgs/discord.png" alt=""></a>
         <a href="mailto:Hexelz@protonmail.com"><img height="100px" style="opacity:0.7" src="/imgs/email.png" alt=""></a>
       </div>
