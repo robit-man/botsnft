@@ -30,14 +30,14 @@
     <div class="wrapper">
       <div class="fullheight" >
 
-      <div class="area">
+      <div class="area" style="height: 100vh;display: flex;">
        <div class="mint-box">
          <div class="img-box">
-           <img src="/imgs/Hexels_20.png" alt="">
+           <img src="/imgs/8bitBotsSample.jpeg" alt="">
           </div>
           <div class="text-row">
-            <p>HEXELZ</p>
-            <p><b>0.55 ETH</b></p>
+            <p>B0+5</p>
+            <p><b>0.3 ETH</b></p>
           </div>
           {#if !$address}
           <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>

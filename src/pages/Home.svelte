@@ -45,8 +45,8 @@ import Mask from "./mask.svelte";
     <img src="/8bitwave.js" alt="">
    </div>
   <div class="hero " id="hero">
-    <h1 style="position:relative;z-index:2;color:rgba(132, 226, 255, 0.49);line-height:1;padding:2rem;mix-blend-mode:normal;" >N<b style="animation: flash3 2s ease alternate infinite;">F</b><div class="mobile-break"><br></div>T<b style="animation: flash3 4s ease alternate infinite;">-</b><div class="mobile-break"><br></div>B<div class="mobile-break"><br></div>0<div class="mobile-break"><br></div>+<b style="animation: flash3 5s ease alternate infinite;">5</b></h1>
-    <a href="#mint"><div class="mint-button-cta-box" style=""><h1>MINT ▼</h1></div></a>
+    <h1 style="position:relative;z-index:2;color:rgba(132, 226, 255, 0.49);line-height:1;padding:2rem;mix-blend-mode:normal;" >B<div class="mobile-break"><br></div>0<div class="mobile-break"><br></div>+<b style="animation: flash3 5s ease alternate infinite;">5</b></h1>
+    <Link to="/gallery"><div class="mint-button-cta-box" style=""><h1>MINT ▼</h1></div></Link>
     
   </div>
 </div>
@@ -110,7 +110,7 @@ import Mask from "./mask.svelte";
           <h1>
             MINT B0+5
           </h1>
-          <p class="subheader">>> 0.55 ETH</p>
+          <p class="subheader">>> 0.3 ETH</p>
           <p>Connect your Web3 metamask wallet to initiate the minting process. <br>There are 100 unique B0+5 available! <br>Only one Mint per Wallet.</p>
         {#if !$address}
           <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
@@ -121,7 +121,6 @@ import Mask from "./mask.svelte";
 
         </div>
         <div class="mask" style="">
-          <Mask />
   
     
             </div>
@@ -139,14 +138,13 @@ import Mask from "./mask.svelte";
   max-width:512px;
 }
 .mask{  
-  mix-blend-mode: luminosity; 
+    background-size: cover;
+    background-position: center;
     display: flex;
-    width: 512px;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/1280px-MetaMask_Fox.svg.png);
+    width: 512px;border-radius:4px;
+    background-image: url(/imgs/botcat.jpeg);
     height: 512px;
     flex-flow: wrap;
-    background-size: contain;
-    overflow: visible!important;
     justify-content: center;
 }
 
@@ -182,7 +180,7 @@ height:80vw;width:80vw;}
   .escher{z-index:-1;
     display:flex;
     overflow: hidden;
- background-attachment: fixed;height:calc(100vh + 4rem);clip-path: polygon(0 0, 100% 0, 100% 100%, 4rem 100%, 0 calc(100% - 4rem));}
+ background-attachment: fixed;height:calc(100vh + 4rem);}
  @keyframes escherflow{
    0%{background-color: rgb(206, 206, 206);}
    50%{background-color: rgb(59, 59, 59);}
@@ -209,14 +207,14 @@ height:80vw;width:80vw;}
     width:100vw;
     position: fixed;
     pointer-events:none;
-    z-index: 2;
+    z-index: -1;
     display: block;
     top: 0px;
     right: 0px;}
 
 .hero{
   perspective: 600px;
- background-image:linear-gradient(45deg, #00015a, #ff00aa);width:100%;height:100%;display:flex;flex-flow:column;justify-content: center; overflow:hidden;   backdrop-filter:  invert(0%)brightness(0.5);transition:all 0.2s ease;
+ background-image:linear-gradient(45deg, #0003e696, #ff00aa47);z-index:5;width:100%;height:100%;display:flex;flex-flow:column;justify-content: center; overflow:hidden;   backdrop-filter:  invert(0%)brightness(0.5);transition:all 0.2s ease;
 }
 #svg-pattern{opacity:0.5;position:absolute;top:0px;left:0px;display:block;animation:zip 20s ease infinite;transition: transform 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.1);}
 .hero:hover{ backdrop-filter: invert(100%)brightness(1);cursor:crosshair;}

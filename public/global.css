@@ -153,7 +153,7 @@ body {
 .row a:hover > img{transform:scale(0.9);}
 .subheader > img{transition:all 0.2s ease;margin-left:16px;margin-right:16px;margin-top:25px;}
 .subheader:hover > img{margin-right:8px;padding-left:8px;}
-.subheader:hover{color:#9100ff;}
+.subheader:hover{color:#00ffc3;}
 #gallery{padding:10px;width:calc(100% - 20px)!important;}
 #gallery > .column > img{
 	transition:all 0.2s ease;
@@ -226,10 +226,10 @@ h1{font-size:5rem;
 	line-height:1;
 	font-family: 'VT323', monospace;
 	font-weight: 700;
-    text-shadow:5px 5px #3700ff55, 4px 4px #5100ff55, 3px 3px #7600ff55, 2px 2px #e100ff55, 1px 1px #ff00d455;
+    text-shadow:5px 5px #00ffe754, 4px 4px #5100ff55, 3px 3px #7600ff55, 2px 2px #e100ff55, 1px 1px #ff00d455;
 	color:transparent;}
 	
-b{    font-family: "UNI";
+b{    font-family: 'VT323', monospace;
 }
 p{
 	line-height: 1.2;
@@ -269,29 +269,38 @@ input:disabled {
 .image-box{
 	perspective:600px;
 	max-width:512px;
-	box-shadow:#9100ff 0.5rem 0.5rem,#9100ff 0.4rem 0.4rem,#9100ff 0.3rem 0.3rem,#9100ff 0.2rem 0.2rem,#9100ff 0.1rem 0.1rem;border-radius:4px;margin:auto 0px;
+	box-shadow:#00ffc3 0.5rem 0.5rem,#00ffc3 0.4rem 0.4rem,#00ffc3 0.3rem 0.3rem,#00ffc3 0.2rem 0.2rem,#00ffc3 0.1rem 0.1rem;border-radius:4px;margin:auto 0px;
 	transition: all 0.2s ease;
 }
 .image-box:hover{
-	box-shadow:#9100ff 0.5rem 0.5rem;
+	box-shadow:#00ffc3 0.5rem 0.5rem;
 }
 .sc-carousel-dots__container {margin-top:1rem;}
-.sc-carousel__pages-window{transition:all 0.2s ease;box-shadow:#9100ff 0.5rem 0.5rem,#9100ff 0.4rem 0.4rem,#9100ff 0.3rem 0.3rem,#9100ff 0.2rem 0.2rem,#9100ff 0.1rem 0.1rem;overflow:hidden;border-radius:4px;}
+.sc-carousel__pages-window{transition:all 0.2s ease;box-shadow:#00ffc3 0.5rem 0.5rem,#00ffc3 0.4rem 0.4rem,#00ffc3 0.3rem 0.3rem,#00ffc3 0.2rem 0.2rem,#00ffc3 0.1rem 0.1rem;overflow:hidden;border-radius:4px;}
 
 .sc-carousel__pages-window:hover{
 	box-shadow:0px 0px transparent;
 }
-.sc-carousel-dot__dot{background-color:#9100ff!important;}
-.area{background-color:#f1f1f1;padding:2rem 2rem ;background-blend-mode:color-burn;}
-.area:nth-child(1){background-size:500px;background-repeat:no-repeat;background-attachment:Scroll;background-position-y:center;background-position-x:-20px;background-image:url(/imgs/feelers.png);}
-.area:nth-child(2){background-size:500px;background-repeat:no-repeat;background-attachment:Scroll;background-position-y:center;background-position-x:calc(100% + 20px);background-image:url(/imgs/feelers2.png);}
+.sc-carousel-dot__dot{background-color:#00ffc3!important;}
+.area{  background-color: #dbd4ff;
+	background-blend-mode: lighten;padding:2rem 2rem ;}
+.area:nth-child(1){
+	background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-image: url(https://i.pinimg.com/originals/ba/b6/08/bab6083d2b470bf80d99ac49c2b331a5.gif);
+}
+.area:nth-child(2){
+	background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;background-image:url(https://i.pinimg.com/originals/07/fe/df/07fedf9496f9933bd6eb59ee05115e8b.gif);}
 button {
 	color:#101010;
 	border:2px solid transparent;
 	padding:0rem .5rem;
 	transition:all 0.2s ease;
 	background:transparent;
-	box-shadow: 2px 2px 0px #9100ff;
+	box-shadow: 2px 2px 0px #00ffc3;
 	border-radius:4px;
 }
 button:hover {
@@ -305,8 +314,9 @@ button:hover {
 }	.menu{background: #f1f1f1;
 	margin: 1rem;border-radius:0px!important;
 display:flex;flex-flow:column;justify-content: center;}
-  .wrapper{	scroll-behavior: smooth;
-	background:#f1f1f1;width:100%;left:164px;position:absolute;height: 100vh;
+  .wrapper{	scroll-behavior: smooth;background-image: url(https://s-media-cache-ak0.pinimg.com/originals/ef/a9/39/efa9396fe51653bc074f75d2252692d0.gif);
+	background-size: cover;box-shadow: inset 0px 0px 50px black,inset 0px 0px 100px black,inset 0px 0px 150px black,inset 0px 0px 200px black;
+	background-color:#000;background-blend-mode: hard-light;width:100%;left:164px;position:absolute;height: 100vh;
 	overflow-y:auto;overflow-x:hidden;}
 @media only screen and (max-width: 900px) {
 	.image-box{margin:2rem auto!important;}

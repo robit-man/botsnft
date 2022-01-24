@@ -70,7 +70,7 @@
         
         <header id="sidebar">
           <div class="left-box">
-                     <Link to="/"> <img  on:click={toggle} src="/imgs/impossible-triangle.svg" width="50px" height="50px" alt=""></Link>
+                     <Link to="/"> <img  on:click={toggle} src="/imgs/robot.svg" width="50px" height="50px" alt=""></Link>
           </div>
 
           <nav>
