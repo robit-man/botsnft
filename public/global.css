@@ -282,7 +282,7 @@ input:disabled {
 	box-shadow:0px 0px transparent;
 }
 .sc-carousel-dot__dot{background-color:#00ffc3!important;}
-.area{  background-color: #dbd4ff;
+.area{  background-color: #9386d5;
 	background-blend-mode: lighten;padding:2rem 2rem ;}
 .area:nth-child(1){
 	background-size: cover;
