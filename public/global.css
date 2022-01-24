@@ -234,6 +234,9 @@ b{    font-family: 'VT323', monospace;
 p{
 	line-height: 1.2;
     font-family: 'Source Code Pro', monospace;
+	color: white;
+font-weight: 500;
+text-shadow: 2px 2px #5000ff;
 }
 a {
 	color: inherit;
@@ -283,7 +286,7 @@ input:disabled {
 }
 .sc-carousel-dot__dot{background-color:#00ffc3!important;}
 .area{  background-color: #9386d5;
-	background-blend-mode: lighten;padding:2rem 2rem ;}
+	background-blend-mode: color-dodge;padding:2rem 2rem ;}
 .area:nth-child(1){
 	background-size: cover;
 background-repeat: no-repeat;
@@ -316,7 +319,8 @@ button:hover {
 display:flex;flex-flow:column;justify-content: center;}
   .wrapper{	scroll-behavior: smooth;background-image: url(https://s-media-cache-ak0.pinimg.com/originals/ef/a9/39/efa9396fe51653bc074f75d2252692d0.gif);
 	background-size: cover;box-shadow: inset 0px 0px 50px black,inset 0px 0px 100px black,inset 0px 0px 150px black,inset 0px 0px 200px black;
-	background-color:#000;background-blend-mode: hard-light;width:100%;left:164px;position:absolute;height: 100vh;
+	background-color: #0b0088;
+background-blend-mode: difference;width:100%;left:164px;position:absolute;height: 100vh;
 	overflow-y:auto;overflow-x:hidden;}
 @media only screen and (max-width: 900px) {
 	.image-box{margin:2rem auto!important;}

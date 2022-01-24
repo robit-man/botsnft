@@ -120,10 +120,10 @@ import Mask from "./mask.svelte";
           {/if}
 
         </div>
-        <div class="mask" style="">
-  
-    
-            </div>
+        
+      <div class="image-box" style="border-radius:4px;">
+        <div class="perspective-hover-1" style="border-radius:4px;background-size:cover;" src="" alt=""><img style="width:100%;height:100%;pointer-events: none;" src="/imgs/botcat.jpeg" alt=""></div>
+      </div>
       </div>
     </div>
   </div>
