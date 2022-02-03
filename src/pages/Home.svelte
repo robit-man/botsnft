@@ -45,7 +45,7 @@ import Mask from "./mask.svelte";
     <img src="/8bitwave.js" alt="">
    </div>
   <div class="hero " id="hero">
-    <h1 style="position:relative;z-index:2;color:rgba(132, 226, 255, 0.49);line-height:1;padding:2rem;mix-blend-mode:normal;" >B<div class="mobile-break"><br></div>0<div class="mobile-break"><br></div>+<b style="animation: flash3 5s ease alternate infinite;">5</b></h1>
+    <h1 style="position:relative;z-index:2;color:rgba(132, 226, 255, 0.49);line-height:1;padding:2rem;mix-blend-mode:normal;" >b<div class="mobile-break"><br></div>0<div class="mobile-break"><br></div>+<div class="mobile-break"><br></div><b style="animation: flash3 5s ease alternate infinite;">5</b></h1>
     <Link to="/gallery"><div class="mint-button-cta-box" style=""><h1>MINT ▼</h1></div></Link>
     
   </div>
