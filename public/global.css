@@ -236,7 +236,7 @@ p{
     font-family: 'Source Code Pro', monospace;
 	color: white;
 font-weight: 500;
-text-shadow: 2px 2px #5000ff;
+text-shadow: 2px 2px   #5000ff;
 }
 a {
 	color: inherit;
@@ -286,7 +286,7 @@ input:disabled {
 }
 .sc-carousel-dot__dot{background-color:#00ffc3!important;}
 .area{  background-color: #9386d5;
-	background-blend-mode: color-dodge;padding:2rem 2rem ;}
+	background-blend-mode: color-burn;padding:2rem 2rem ;}
 .area:nth-child(1){
 	background-size: cover;
 background-repeat: no-repeat;
@@ -309,7 +309,7 @@ button {
 button:hover {
 	box-shadow:0px 0px transparent;
 }
-.nav-text{color:#101010;transition:all 0.2s ease;font-size:1.8rem;margin:0rem 1rem;font-weight:200;}
+.nav-text{color:#000000;transition:all 0.2s ease;font-size:1.8rem;margin:0rem 1rem;font-weight:900;text-shadow:unset;}
 .nav-text:hover{font-weight:900;}
 .swiper-pagination-bullet{
 	background: #4d4fc8;
