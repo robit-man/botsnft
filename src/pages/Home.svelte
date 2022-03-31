@@ -111,7 +111,7 @@ import Mask from "./mask.svelte";
             MINT B0+5
           </h1>
           <p class="subheader">>> 0.3 ETH</p>
-          <p>Connect your Web3 metamask wallet to initiate the minting process. <br>There are 100 unique B0+5 available! <br>Only one Mint per Wallet.</p>
+          <p>Connect your Web3 metamask wallet to initiate the minting process. <br>There are 100 unique B0+5 available!</p>
         {#if !$address}
           <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
           {:else}
