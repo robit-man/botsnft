@@ -42,7 +42,8 @@
           {#if !$address}
           <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
         {:else}
-          <button on:click={mint} class="mint-button"><p>Mint Hexelz</p></button>
+          <button on:click={mint} class="mint-button"><p>Mint N b0+s</p></button>
+	       <input type="range" id="points" name="points" min="0" max="10"> 
           <br><br>{addressDisplay}  
         {/if} 
        </div>
