@@ -10,14 +10,14 @@ import Mask from "./mask.svelte";
     //Help import data from opensea and pass into SwiperSlide <3 
     import { 
         initProvider,
-        mintHex
+        mint
     } from '../utils.js';
 
     var addressDisplay = ''
     async function connectEthProvider(reconnect=false) {
         if(!$address) {
             await initProvider(app, reconnect);
-            addressDisplay = String($address).slice(0,10)+"...";
+            addressDisplay = String($address).slice(0,7)+"..."+String($address).slice(-5);
             $address = $address;
         }
     }
@@ -26,8 +26,8 @@ import Mask from "./mask.svelte";
         connectEthProvider(false);
     }    
 
-    async function mint(event) {
-      await mintHex(contract, provider);
+    async function call_mint(event) {
+      await mint(contract, provider);
     }
     var metadata = {
   "name": "HEXELZ",
@@ -115,7 +115,7 @@ import Mask from "./mask.svelte";
         {#if !$address}
           <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
           {:else}
-            <button on:click={mint} class="mint-button"><p>Mint</p></button>
+            <button on:click={call_mint} class="mint-button"><p>Mint</p></button>
             <br><br>{addressDisplay}  
           {/if}
 

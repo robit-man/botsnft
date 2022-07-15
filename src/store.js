@@ -1,4 +1,5 @@
 import { writable } from 'svelte/store';
+import { ethers } from 'ethers';
 
 const createWritableStore = (key, startValue) => {
   const { subscribe, set } = writable(startValue);
@@ -24,8 +25,8 @@ export const contract = createWritableStore('contract', undefined);
 export const provider = createWritableStore('provider', undefined);
 export const network = createWritableStore('network', undefined);
 export const nfts = createWritableStore('nfts', undefined);
-export const alreadyMinted = createWritableStore('alreadyMinted', false);
 export const etherLoading = createWritableStore('etherLoading', false);
 export const balances = createWritableStore('balances', [])
 export const maxSupply = createWritableStore('maxSupply', 0);
 export const totalSupply = createWritableStore('totalSupply', 0);
+export const price = createWritableStore('price', ethers.utils.parseEther('0.3'));

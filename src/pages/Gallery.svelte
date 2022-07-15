@@ -10,7 +10,7 @@ let fetchJson = fetch('json/1').then(res => res.json());
     //Help import data from opensea and pass into SwiperSlide <3 
     import { 
         initProvider,
-        mintHex,
+        mint,
     } from '../utils.js';
     let hexelz = [
       { id: '01'},
@@ -35,9 +35,6 @@ let fetchJson = fetch('json/1').then(res => res.json());
         connectEthProvider(false);
     }    
 
-    async function mint(event) {
-      await mintHex(contract, provider);
-    }
 var nft = {
   "name": "HEXELZ",
   "description": "HEXELZ is a set of impossible shapes inspired by MC Escher and The Penrose Geometry",

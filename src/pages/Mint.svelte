@@ -1,19 +1,21 @@
 <script>
     import { Link } from "svelte-routing";
     import { fade } from 'svelte/transition';
-    import { address, contract, provider, alreadyMinted, etherLoading, totalSupply, maxSupply } from '../store';
+    import { address, contract, provider, price, totalSupply, maxSupply, etherLoading } from '../store';
     import { onMount, getContext} from 'svelte';
     import { 
         initProvider,
-        mintHex,
+        mint,
+        amountFormatter,
     } from '../utils.js';
 
     const app = getContext('app');
     var addressDisplay = ''
+    let quantity = 1;
     async function connectEthProvider(reconnect=false) {
         if(!$address) {
             await initProvider(app, reconnect);
-            addressDisplay = String($address).slice(0,10)+"...";
+            addressDisplay = String($address).slice(0,7)+"..."+String($address).slice(-5);
             $address = $address;
         }
     }
@@ -22,8 +24,8 @@
         connectEthProvider(false);
     }    
 
-    async function mint(event) {
-      await mintHex(contract, provider);
+    async function call_mint(event) {
+      await mint(quantity);
     }
 </script>
 
@@ -36,20 +38,23 @@
            <img src="/imgs/8bitBotsSample.jpeg" alt="">
           </div>
           <div class="text-row">
-            <p>B0+5</p>
-            <p><b>0.3 ETH</b></p>
+            <p>{$totalSupply} B0+5</p>
+            <p><b> {amountFormatter($price.mul(quantity))} ETH</b></p>
           </div>
           {#if !$address}
           <button on:click={connect} class="mint-button"><p>Connect Wallet</p></button>
         {:else}
-          <button on:click={mint} class="mint-button"><p>Mint N b0+s</p></button>
-	       <input type="range" id="points" name="points" min="0" max="10"> 
-          <br><br>{addressDisplay}  
+          {#if $etherLoading == false }
+          <button on:click={call_mint} class="mint-button"><p>Mint {quantity} b0+s</p></button>
+          {:else}
+          <button class="mint-button"><img style='max-height:4rem' src='/imgs/waiting-arrows.gif' alt='loading' /></button>
+        {/if}
+        <input type="range" id="points" name="points" bind:value={quantity} min="0" max="10"> 
+          <br><br><div style='color:white'>{addressDisplay}</div>
         {/if} 
        </div>
       </div>
-    </div>
-
+     </div>
     </div>
     
 
@@ -70,6 +75,7 @@ justify-content: center;}
 .mint-button > p{
   transition:all 0.2s ease;
   font-size:1rem;letter-spacing:2px;
+  
 }
 .mint-button:hover{
   background-color:#656565;

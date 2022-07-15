@@ -12,7 +12,6 @@
     import { Audio, Video } from 'svelte-audio-video';
     import { 
         initProvider,
-        mintHex,
     } from './utils.js';  
     
 
@@ -47,9 +46,6 @@
         connectEthProvider(false);
     }    
 
-    async function mint(event) {
-      await mintHex(contract, provider);
-    }
     const app = writable({});
     //export const innerHeight = writable(1000)
     //export const innerWidth = writable(1000) Any use for these
