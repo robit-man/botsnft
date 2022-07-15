@@ -47,22 +47,6 @@ export async function initProvider(app, reconnect = false) {
     
     app = app;
     total = parseInt(total.toString())
-    var iterate = [...Array(total).keys()]
-    var bals = [];
-    
-    var each = iterate.forEach( async i => {
-        var owner
-        try {
-            owner = await nftContract.ownerOf(i+1)
-        }
-        catch(err) {
-            console.log(err)
-        }
-        if(owner == addr) {
-            bals.push(resp[i])
-            balances.set(bals);
-        }
-    })
     
     subscribeToTransferEvent(window.ethereum, nftContract)
     // Subscribe to accounts change
@@ -79,10 +63,8 @@ export async function mint(quantity) {
     const nftContract = get(contract)
     const mintPrice = get(price)
     try {
-        console.log("Mint")
         etherLoading.set(true);
         const resp = await nftContract.mint({ value: mintPrice.mul(quantity) });
-        console.log("Loading");
         await resp.wait().then(
             receipt => {
                 console.log(receipt);
@@ -136,17 +118,10 @@ export async function subscribeToTransferEvent(provider) {
         var nftContract = get(contract);
         var total = await nftContract.totalSupply();
         totalSupply.set(total)
-        var resp = await fetch('/.netlify/functions/get_gallery', {
-            method: 'POST',
-            body: JSON.stringify({})
-        })
-        resp = await (await (resp).json())
-        nfts.set(resp);
     });
+}
 
-  }
-
-  export function amountFormatter(amount, baseDecimals = 18, displayDecimals = 3, useLessThan = true) {
+export function amountFormatter(amount, baseDecimals = 18, displayDecimals = 3, useLessThan = true) {
     if (baseDecimals > 18 || displayDecimals > 18 || displayDecimals > baseDecimals) {
       throw Error(`Invalid combination of baseDecimals '${baseDecimals}' and displayDecimals '${displayDecimals}.`)
     }
